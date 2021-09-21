@@ -7,7 +7,7 @@
 `1º Semestre`
 
 O projeto tem como objetivo criar um repositório de arquivos XML de Notas Fiscais Eletrônicas.
-Além de disso, a ferramenta propõe dentro do seu escopo, fornecer diversas funcionalidades de filtro busca,
+Além de disso, a ferramenta propõe, dentro do seu escopo, fornecer diversas funcionalidades de filtro busca,
 relatórios, impressão de notas, entre outros.
 
 ## Integrantes
