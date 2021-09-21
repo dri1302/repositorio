@@ -4,7 +4,7 @@
 
 `Desenvolvimento de Aplicação Web Front-End`
 
-`1º Semestre`
+`Eixo 1`
 
 O projeto tem como objetivo criar um repositório de arquivos XML de Notas Fiscais Eletrônicas.
 Além de disso, a ferramenta propõe dentro do seu escopo, fornecer diversas funcionalidades de filtro busca,
