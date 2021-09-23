@@ -1,10 +1,10 @@
-**2 - Especificações do Projeto**
+# 2 - Especificações do Projeto
 
 A definição do problema apresentado nesse projeto e suas respectivas características, foram levantadas a partir de entrevistas com os usuários que lidam direta ou indiretamente com o tema em questão. Todos os pontos relatados foram ao encontro dessas opiniões e experiências dos envolvidos.   
 
 As informações relativas ao processo de pesquisa e entrevista com as partes estão na forma de persona e histórias de usuários.
 
-**2.1 - Personas**
+## 2.1 - Personas
 
 Os profissionais que colaboraram no processo de entendimento do problema estão apresentados abaixo:  
 ________________________________________________________________________________________
