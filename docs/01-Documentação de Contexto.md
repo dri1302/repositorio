@@ -1,46 +1,38 @@
-# Introdução
+# 1 - Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+A cada ano que passa, a tecnologia da informação vem aprimorando as relações de trabalho e desenvolvendo sistemas cada vez mais complexos e eficazes para a resolução das demandas do setor empresarial. Devido às necessidades legais que uma empresa está submetida, é preciso que alguns requisitos sejam cumpridos.  
 
-## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Com a implementação da nota fiscal eletrônica - NF-e -em 2005 (SINIEF 07/05, Cláusula Décima, § 2º), o mecanismo de fiscalização por parte do governo, na figura da Secretaria da Fazenda – SEFAZ – foi sendo adaptado para essa nova realidade. Para isso foi criado o que é comumente chamado arquivo XML, que é a própria nota no formato digital.  
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Dentro deste novo contexto, as empresas são obrigadas por força de lei a armazenar os arquivos XML para que, mediante solicitação da SEFAZ, sejam apresentados em possíveis fiscalizações futuras. O descumprimento da lei acarreta pesadas multas para as empresas.  
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Diante da necessidade de armazenamento desses dados, torna-se imprescindível sistemas capazes de armazenar de forma segura e concisa os arquivos XML, além de disponibilizar para a empresa quando for requisitado.  
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+## 1.1 - Problema
+Conforme dito anteriormente, o problema que se busca resolver dentro desse projeto é a inadequação dos métodos de armazenamento comumente utilizados por empresas diante do que pede a legislação brasileira e do ponto de vista de segurança das próprias empresas em relação a esses dados, criando-se um meio de armazenamento das Notas Fiscais eletrônicas confiável e seguro.  
 
-## Objetivos
+## 1.2 - Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral desse estudo é o desenvolvimento de software capaz de armazenar e disponibilizar arquivos XML de notas fiscais para as empresas.  
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+ Dentro do âmbito dos objetivos específicos, os pontos elencados são:  
 
-## Justificativa
+    Identificar as dificuldades das empresas em armazenar os arquivos;  
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+    Desenvolver aplicação para armazenamento de arquivo XML;  
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+    Criar soluções para download de arquivos nos sistemas da empresa;  
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+    Substituir a versão física das Notas Fiscais. 
 
-## Público-Alvo
+## 1.3 - Justificativa
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+A nota fiscal eletrônica já é uma realidade no Brasil desde 2005, quando foi implementada pela SEFAZ, através do ajuste SINIEF 07/05. Com o passar do tempo, novas alterações foram feitas nesse mecanismo de NF-e. Um exemplo disso é a alteração feita em 2009, pelo ajuste SINIEF 12/09, definindo que o emitente da NF-e deve encaminhar ou disponibilizar download do arquivo da nota fiscal e seu respectivo Protocolo de Autorização de Uso ao destinatário. E também modifica o Processo de Registro de Contingência1, que deixa de ser realizado através do Livro de Ocorrência2 e passa a ser feito no próprio arquivo XML, não precisando de imprimir as notas fiscais, contribuindo, inclusive, com a redução do uso de papel.  
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Com a fiscalização implementada através de processos virtuais, empresários e contadores necessitam cada vez mais de controle e agilidade na busca de seus documentos fiscais, afim de evitar multas para as empresas (Lei 8137/90, Art 1º, inciso V). Dentro desse quadro, é possível desenvolver softwares capazes de realizar todo o trâmite relacionado ao gerenciamento e download dos arquivos XML de NF-e.  
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+## 1.4 - Público-alvo
+
+A proposta desse projeto tem como foco as empresas emitentes de NF-e, tanto do ponto de vista da relação fornecedor x cliente quanto da relação cliente x fornecedor, visto que ambos devem cumprir as determinações legais de armazenamento desses dados.  
+
+Embora seja possível abranger empresas de diversos portes, os nichos definidos para o público-alvo do presente estudo são as Microempresas (ME) e as Empresas de Pequeno Porte (EPP), que, em muitos casos, não possuem sistemas eficientes para armazenamento de XML ou até mesmo quando os proprietários desconhecem essa possibilidade.  
