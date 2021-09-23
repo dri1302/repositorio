@@ -7,9 +7,8 @@ As informações relativas ao processo de pesquisa e entrevista com as partes es
 **2.1 - Personas**
 
 Os profissionais que colaboraram no processo de entendimento do problema estão apresentados abaixo:  
-
 ________________________________________________________________________________________
-<br>**Ana Alice Soares**<br/>
+**Ana Alice Soares**
 <br>**Idade:** 42 anos.<br/>
 **Ocupação:** Contadora, com experiência na área financeira. Atua em uma empresa de pequeno porte no ramo do vestuário voltado para público infantil.  
 
@@ -28,8 +27,7 @@ ________________________________________________________________________________
        Adora filmes com histórias comoventes; 
        Mãe da Joana e do Renato, gosta de viajar com os filhos quando tem tempo.  
  ________________________________________________________________________________________
- 
-<br>**João Guilherme Pereira**<br/>
+**João Guilherme Pereira**>
 <br>**Idade:** 66 anos.<br/>
 **Ocupação**: Empresário. Proprietário de um supermercado de pequeno porte. 
 
@@ -48,8 +46,7 @@ ________________________________________________________________________________
        Assistir futebol com o filho Mateus;
        Adora o silêncio da pescaria no fim de semana. 
 ________________________________________________________________________________________
-
-<br>**Cristina Vieira Netto**<br/>
+**Cristina Vieira Netto**
 <br>**Idade:** 39 anos.<br/>
 **Ocupação:** Tecnóloga em marketing, cursando bacharelado em administração, empreendedora e proprietária de microempresa no ramo de publicidade.
 
