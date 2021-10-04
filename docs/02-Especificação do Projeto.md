@@ -100,6 +100,7 @@ O escopo do projeto é apresentado em requisitos funcionais, descrevendo a inter
 |RF-007| O sistema deverá permitir a emissão de relatórios de notas de entradas e saídas, conforme data estipulada pelo usuário              |    MÉDIA   |
 |RF-008| O sistema deverá permitir o bloqueio de segurança para impedir edição dos arquivos                                                  |    ALTA    |
 
+
 ### 2.3.2 - Requisitos não Funcionais
 
 |  ID   |                                                        Descrição do Requisito                                                              | Prioridade |
