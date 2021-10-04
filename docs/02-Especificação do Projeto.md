@@ -82,7 +82,6 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Cristina Vieira Neto   | armazenar XML em plataforma online           | evitar perdas causadas por possíveis danos nos computadores |
 
 
-
 ## 2.3 - Lista de Requisitos
 
 O escopo do projeto é apresentado em requisitos funcionais, descrevendo a interação do usuário com o sistema, e o em requisitos não funcionais, que define os quesitos de funcionamento do sistema. Os requisitos estão demonstrados nos quadros abaixo:  
