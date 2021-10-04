@@ -87,48 +87,38 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 O escopo do projeto é apresentado em requisitos funcionais, descrevendo a interação do usuário com o sistema, e o em requisitos não funcionais, que define os quesitos de funcionamento do sistema. Os requisitos estão demonstrados nos quadros abaixo:  
 
-### Requisitos Funcionais
+### 2.3.1 - Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|  ID |                                                 Descrição do Requisito                                                              | Prioridade |
+|------|-------------------------------------------------------------------------------------------------------------------------------------|------------|
+|RF-001| O sistema deverá permitir ao usuário buscar por notas fiscais filtrando por datas (mês e ano) e pela razão social da empresa        |    MÉDIA   | 
+|RF-002| O sistema deverá permitir ao usuário cadastrar-se e receber um login e senha (que poderá ser alterada por ele)                      |    ALTA    |
+|RF-003| O sistema deverá receber o arquivo de Nota Fiscal emitida pela SEFAZ a partir do seu computador e armazenar em sua conta de usuário |    ALTA    |  
+|RF-004| O sistema deverá permitir o download dos arquivos em formato PDF e XML, individualmente ou em lote                                  |    MÉDIA   |  
+|RF-005| O sistema deverá mostrar o status de NF-e                                                                                           |    MÉDIA   |
+|RF-006|                                      REQUISITO REMOVIDO PELO PRODUCT OWNER                                                          |    null    | 
+|RF-007| O sistema deverá permitir a emissão de relatórios de notas de entradas e saídas, conforme data estipulada pelo usuário              |    MÉDIA   |
+|RF-008| O sistema deverá permitir o bloqueio de segurança para impedir edição dos arquivos                                                  |    ALTA    |
 
+### 2.3.2 - Requisitos não Funcionais
 
-### Requisitos não Funcionais
-
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-## Restrições
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|  ID   |                                                        Descrição do Requisito                                                              | Prioridade |
+|-------|--------------------------------------------------------------------------------------------------------------------------------------------|------------|
+|RNF-001| O sistema deverá permitir que a plataforma possa ser migrada para outro servidor de hospedagem a cada 6 meses                              |    MÉDIA   | 
+|RNF-002| O sistema não deverá utilizar mais que 1gb de memória RAM em relação ao navegador                                                          |    ALTA    | 
+|RNF-003| O sistema não pode usar mais que 20% do uso da CPU                                                                                         |    ALTA    | 
+|RNF-004| O sistema não deverá gerar arquivos maiores que 5mb, sendo de alguma forma comprimidos caso excedam esse valor                             |    ALTA    | 
+|RNF-005| O sistema deverá ser capaz de processar os dados requiridos pelo usuário e gerar o formato do arquivo de sua escolha em até 5s             |    MÉDIA   | 
+|RNF-006| O sistema deverá ser adaptável a várias formas de acesso, sendo por meio web, se ajustando de acordo com o tamanho de tela do mesmo        |    BAIXA   | 
+|RNF-007| Implementação de uma API com o sistema do SEFAZ para a obtenção das NF-e, para que o usuário do sistema possa gerar suas notas             |    MÉDIA   | 
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+## 2.4 - Restrições
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+O projeto apresenta algumas limitações de ordem prática e de tecnologia em sua execução. As questões que limitam estão descritas na tabela abaixo:  
+
+|  ID |                            Restrição                                  |
+|-----|-----------------------------------------------------------------------|
+|RE-01| A data final para a entrega do projeto será até 06/12/2021            |
+|RE-02| O sistema deve ser restrito a tecnologia de Web no Front End          |
+|RE-03| O sistema deve ser desenvolvido exclusivamente pelos membros do grupo | 
