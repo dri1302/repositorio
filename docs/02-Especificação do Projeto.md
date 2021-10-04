@@ -87,7 +87,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 O escopo do projeto é apresentado em requisitos funcionais, descrevendo a interação do usuário com o sistema, e o em requisitos não funcionais, que define os quesitos de funcionamento do sistema. Os requisitos estão demonstrados nos quadros abaixo:  
 
-### 2.3.1 - Requisitos Funcionais
+## 2.3.1 - Requisitos Funcionais
 
 |  ID |                                                 Descrição do Requisito                                                              | Prioridade |
 |------|-------------------------------------------------------------------------------------------------------------------------------------|------------|
@@ -100,8 +100,8 @@ O escopo do projeto é apresentado em requisitos funcionais, descrevendo a inter
 |RF-007| O sistema deverá permitir a emissão de relatórios de notas de entradas e saídas, conforme data estipulada pelo usuário              |    MÉDIA   |
 |RF-008| O sistema deverá permitir o bloqueio de segurança para impedir edição dos arquivos                                                  |    ALTA    |
 
-<br>
-### 2.3.2 - Requisitos não Funcionais
+<br></br>
+## 2.3.2 - Requisitos não Funcionais
 
 |  ID   |                                                        Descrição do Requisito                                                              | Prioridade |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------|------------|
@@ -113,7 +113,7 @@ O escopo do projeto é apresentado em requisitos funcionais, descrevendo a inter
 |RNF-006| O sistema deverá ser adaptável a várias formas de acesso, sendo por meio web, se ajustando de acordo com o tamanho de tela do mesmo        |    BAIXA   | 
 |RNF-007| Implementação de uma API com o sistema do SEFAZ para a obtenção das NF-e, para que o usuário do sistema possa gerar suas notas             |    MÉDIA   | 
 
-<br>
+<br></br>
 ## 2.4 - Restrições
 
 O projeto apresenta algumas limitações de ordem prática e de tecnologia em sua execução. As questões que limitam estão descritas na tabela abaixo:  
