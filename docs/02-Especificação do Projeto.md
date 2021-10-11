@@ -1,4 +1,5 @@
 # 2 - Especificações do Projeto
+---
 
 A definição do problema apresentado nesse projeto e suas respectivas características, foram levantadas a partir de entrevistas com os usuários que lidam direta ou indiretamente com o tema em questão. Todos os pontos relatados foram ao encontro dessas opiniões e experiências dos envolvidos.   
 
@@ -8,63 +9,30 @@ As informações relativas ao processo de pesquisa e entrevista com as partes es
 
 Os profissionais que colaboraram no processo de entendimento do problema estão apresentados abaixo:  
 ________________________________________________________________________________________
-**Ana Alice Soares**
-<br>**Idade:** 42 anos.<br/>
-**Ocupação:** Contadora, com experiência na área financeira. Atua em uma empresa de pequeno porte no ramo do vestuário voltado para público infantil.  
+Nome | Idade | Ocupação
+---|---|---
+![Contadora](https://user-images.githubusercontent.com/91077484/136856943-c6c93faa-0d13-412d-91e5-8a7c2f432d67.png)**Ana Alice Soares** | 42 anos | Contadora, com experiência na área financeira. Atua em uma empresa de pequeno porte no ramo do vestuário voltado para público infantil.  
 
-   **Aplicativos:**   
-       Instagram; 
-       Facebook. 
+Aplicativos | Motivações | Frustrações | Hobbies/História
+---|---|---|---
+Instagram;<br> Facebook. | Incentivar os filhos a encontrarem uma carreira profissional que os deixa feliz. | Pouco tempo com a família;<br>  Grande volume de trabalho. | Adora filmes com histórias comoventes; <br> Mãe da Joana e do Renato, gosta de viajar com os filhos quando tem tempo.  
 
-   **Motivações:**    
-       Incentivar os filhos a encontrarem uma carreira profissional que os deixa feliz. 
-
-   **Frustrações:**    
-       Pouco tempo com a família; 
-       Grande volume de trabalho. 
-
-   **Hobbies, História:**   
-       Adora filmes com histórias comoventes; 
-       Mãe da Joana e do Renato, gosta de viajar com os filhos quando tem tempo.  
  ________________________________________________________________________________________
-**João Guilherme Pereira**>
-<br>**Idade:** 66 anos.<br/>
-**Ocupação**: Empresário. Proprietário de um supermercado de pequeno porte. 
+ Nome | Idade | Ocupação
+---|---|---
+![Empresário](https://user-images.githubusercontent.com/91077484/136857072-9d8dabcd-d3a7-43fa-95b3-6c69cb6e0ba3.png)<br>**João Guilherme Pereira** | 66 anos | Empresário e proprietário de um supermercado de pequeno porte. 
 
-   **Aplicativos:**
-       Facebook. 
-
-   **Motivações:**
-       Ensinar o filho sobre a empresa para que ele possa dar continuidade e até mesmo expandir.  
-
-   **Frustrações:**  
-       Alto custo na compra de produtos para revenda;
-       Inflação diminuindo o poder de compra dos clientes;
-       Despreparo do filho para assumir o negócio da família.    
-
-   **Hobbies, História:**
-       Assistir futebol com o filho Mateus;
-       Adora o silêncio da pescaria no fim de semana. 
+Aplicativos | Motivações | Frustrações | Hobbies/História
+---|---|---|---
+Facebook. | Ensinar o filho sobre a empresa para que ele possa dar continuidade e até mesmo expandir. | Alto custo na compra de produtos para revenda;<br> Inflação diminuindo o poder de compra dos clientes;<br> Despreparo do filho para assumir o negócio da família. | Assistir futebol com o filho Mateus;<br> Adora o silêncio da pescaria no fim de semana.
 ________________________________________________________________________________________
-**Cristina Vieira Netto**
-<br>**Idade:** 39 anos.<br/>
-**Ocupação:** Tecnóloga em marketing, cursando bacharelado em administração, empreendedora e proprietária de microempresa no ramo de publicidade.
+ Nome | Idade | Ocupação
+---|---|---
+![Marketing](https://user-images.githubusercontent.com/91077484/136857076-523e11fb-09a5-4bb5-ac53-c30230ae78f8.png)**Cristina Vieira Netto** | 39 anos | Tecnóloga em marketing, cursando bacharelado em administração, empreendedora e proprietária de microempresa no ramo de publicidade. 
 
-   **Aplicativos:** 
-       Instagram; 
-       Facebook; 
-       Tik Tok. 
-
-   **Motivações:**
-       Expandir a empresa e abrir filiais. 
-
-   **Frustrações:**  
-       Dificuldade no início do negócio;
-       Dificuldade de implementação de tecnologia para expandir a empresa.   
-
-   **Hobbies, História:**
-       Ama música, tendo preferência para rock e pop;
-       Gosta de uma boa leitura, especialmente de romances.    
+Aplicativos | Motivações | Frustrações | Hobbies/História
+---|---|---|---
+ Instagram;<br> Facebook;<br> Tik Tok. | Expandir a empresa e abrir filiais. | Dificuldade no início do negócio;<br> Dificuldade de implementação de tecnologia para expandir a empresa. | Ama música, tendo preferência para rock e pop;<br> Gosta de uma boa leitura, especialmente de romances.    
 ________________________________________________________________________________________
 
 
