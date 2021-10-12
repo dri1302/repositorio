@@ -1,5 +1,4 @@
 # 2 - Especificações do Projeto
----
 
 A definição do problema apresentado nesse projeto e suas respectivas características, foram levantadas a partir de entrevistas com os usuários que lidam direta ou indiretamente com o tema em questão. Todos os pontos relatados foram ao encontro dessas opiniões e experiências dos envolvidos.   
 
