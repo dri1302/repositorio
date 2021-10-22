@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Algumas configurações padrões no fima do documento */ 
+
 body { /* Geral*/
     background-color: #E5E5E5;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,7 +17,7 @@ header { /* Barra Superior */
     background-color: #039EF2;
 }
 
-/* MENU SUPERIOR */ 
+/* HEADER - MENU SUPERIOR */ 
 .menu-prelog { /* Posição - 'contato sobre' */
     float: right;
     padding-right: 50px;
@@ -30,11 +32,78 @@ header { /* Barra Superior */
 #contato {  /*REVER */ 
     margin-right: 30px;
 }
-/* FIM MENU SUPERIOR 
+/* FIM HEADER - MENU SUPERIOR */
+
+/* MAIN - LOGIN */
+main { /* Tela Login - Configurações Gerais*/
+    width: 480px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+main > p { /* Título - REPX - Repositório XML e NF-e*/ 
+    font: normal bold 1.5em arial, "sans serif";
+ }
+
+ .linha-horizontal { /* Linha abaixo de REPX*/
+    margin: auto;
+    width: 400px;
+    background-color: rgb(105, 105, 105);
+    border: 2px solid rgb(105, 105, 105);
+ }
+
+#email, #senha { /* Caixas 'email e senha' */
+    font-size: 1em;
+    width: 300px;
+    height: 35px; 
+    border-color: #d4d4d4; /* Usar de padrão para outras caixas*/
+    border-width: 3px; /* Espessura da borda */ 
+    border-radius: 5px;
+    
+}
+
+#bot-entrar { /* Botão Entrar - Login */
+    width: 150px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+}
+
+label { /* Nomes 'Email e Senha' */ 
+    display: block; /* Para deixar no centro */ 
+	margin: 30px 0 6px 0;
+	font-size: 1.2em;
+}
+
+#bot-cadastrar { /* Botão Cadastrar*/
+    width: 170px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+}
 
 
 
-/* RODAPÉ*/
+/* FIM MAIN LOGIN*/
+
+/* FOOTER - RODAPÉ*/
 footer {
     width: 100%; /* Ocupar toda a tela - Largura */
     height: 150px; /* Altura */
@@ -80,8 +149,7 @@ footer {
     background-color: #48b8f5;
     color: #ffffff;
     font-weight: bolder;
-    font-size: 0.9em;
-    font: normal bolder 1em arial, "sans serif";
+    font-size: 1em;
 }
 
 #email-inscreva{ /* Configuração 'caixa email'*/
@@ -91,5 +159,12 @@ footer {
     border-width: 2px;
     padding-right: 10px;
 }
+/* FIM FOOTER RODAPÉ*/
 
-/* FIM RODAPÉ*/
+/* Configuração padrão para cor botões azuis: 
+    background-color: #039EF2;
+    border-radius: 30px;  -----  Sujeito a alteração
+    border-width: 5px;  ---- Sujeito a alteração
+    border-color: #0e98e27a ;
+
+    border-color: #d4d4d4; /* Usar de padrão para outras caixas*/
