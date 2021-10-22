@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body { /* Geral*/
+    background-color: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header { /* Barra Superior */
+    width: 100%; /* Ocupar a tela - Lateral */
+    height: 50px; /* Altura barra */ 
+    top: 0; /* Colar barra no topo */
+    left: 0; /* Colar barra na esquerda */ 
+    right: 0; /* Colar barra na direta */
+    position: fixed; /* Fixar barra no topo */ 
+    background-color: #039EF2;
+}
+
+/* MENU SUPERIOR */ 
+.menu-prelog { /* Posição - 'contato sobre' */
+    float: right;
+    padding-right: 50px;
+}
+
+.menu-prelog > ul > li { /* Alinhamento e fonte 'contato sobre' */ 
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+    
+#contato {  /*REVER */ 
+    margin-right: 30px;
+}
+/* FIM MENU SUPERIOR 
+
+
+
+/* RODAPÉ*/
+footer {
+    width: 100%; /* Ocupar toda a tela - Largura */
+    height: 150px; /* Altura */
+    background-color: #07679A;
+    bottom: 0; /* Posição fundo*/ 
+    left: 0;  /* Não deixa espaço na lateral esquerda */
+    position: fixed; /* Manter fixo */
+}
+
+.opc-rodape{ /* Posição 'planos, contato, sefaz' */
+    float: left;
+    padding-left: 15px;
+
+}
+
+.opc-rodape > ul > li { /* Posição e fonte 'planos, contato, sefaz'*/
+    padding-top: 18px;
+    padding-left: 140px ;
+    color: white;
+    font-weight: light;
+    font-size: 1em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+
+.email-rodape { /* Posição 'caixa email e parágrafo' */
+    float: right;
+    padding-right: 140px;
+    line-height: 2px; /* Distância 'parágrafo' e 'caixa email'*/
+}
+
+.email-rodape > p { /* Posição e fonte 'parágrafo' */
+    padding-top: 36px;
+    text-align: left;
+    font-size: 1em;
+    color: white;
+}
+
+#bot-inscreva{ /* Configuração botão 'inscreva-se'*/
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    border-color: #3e8cb6;
+    background-color: #48b8f5;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 0.9em;
+    font: normal bolder 1em arial, "sans serif";
+}
+
+#email-inscreva{ /* Configuração 'caixa email'*/
+    width: 190px;
+    height: 22px;
+    border-color: #3e8cb6;
+    border-width: 2px;
+    padding-right: 10px;
+}
+
+/* FIM RODAPÉ*/
