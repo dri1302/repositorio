@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador (Chrome não funcionando)-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Chamando CSS-->
     <link rel="stylesheet" href="style.css">
     <title>REPX - XML e NF-e</title>
 </head>
 
 <body>
     <header>
-        <nav class="menu-prelog">
+        <!--Menus superior - Pré Login-->
+        <nav class="menu-superior">
             <ul>
-                <li id="contato" onclick="menuContato()">Contato</li>
-                <!--Criar Link-->
-                <li id="sobre" onclick="menuSobre()">Sobre</li>
-                <!--Criar Link-->
+                <!--Link interno-->
+                <li class="contato"><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
+                <li class="sobre" target="_self" rel="next"><a href="tela-sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <!-- Funcionalidades colocadas no MAIN-->
     <main>
         <p>REPX - Repositório XML e NF-e</p>
-        <!--Desenhar linha-->
+        <!--Desenha linha-->
         <p class="linha-horizontal"></p>
         <form action="">
             <!--Ver método envio formulário para action = '' POST - GET --------->
@@ -31,34 +34,38 @@
             <label for="email">Email</label>
             <input type="text" name="email" id="email" placeholder="email@host.com">
             <!--LOGIN: Senha e botão Entrar-->
-            <label for="senha">Senha</label>
+            <label for="senha">Senha</label> 
             <input type="password" name="senha" id="senha" placeholder="********"> <br>
             <input type="button" value="Entrar" id="bot-entrar" onclick="entrarLogin()">
             <!--LOGIN: Não é cadastrado / Botão cadastrar-->
-            <label for="cadastrar" id="nome-cadastrar">Não é cadastrado?</label> <!--FINALIZAR CONFIG CSS-->
+            <div class="msg-naocad">Não é cadastrado?</div>
             <input type="button" value="Cadastrar" id="bot-cadastrar" onclick="cadastrarCliente()">
         </form>
     </main>
     <footer>
-        <!--Rodapé - Lado Esquerdo-->
-        <div class="opc-rodape"> 
-            <ul type="none">
-                <li>Planos</li>
-                <!--Criar Link-->
-                <li>Contato</li>
-                <!--Criar Link-->
-                <li>Sefaz Nacional</li>
-                <!--Criar Link-->
-            </ul>
-        </div>
-        <!--Rodapé - Lado Direto-->
-        <div class="email-rodape">
-            <p>Inscreva-se para conhecer nossos planos:</p>
-            <input type="email" name="email-inscreva" id="email-inscreva" placeholder="email@host.com">
-            <input type="button" value="Inscreva-se" id="bot-inscreva" onclick="emailInscreva()">
+        <div class="footer-pre">
+            <!--Rodapé - Lado Esquerdo-->
+            <div class="elementos-pre">
+                <ul type="none">
+                    <!--Link interno-->
+                    <li><a href="tela-planos.html" target="_self" rel="next">Planos</a></li>
+                    <li><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
+                    <!--Link externo-->
+                    <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank" rel="external">Sefaz
+                    Nacional</a></li>
+                </ul>
+            </div>
+            <!--Rodapé - Lado Direto-->
+            <div class="email-rodape-pre">
+                <p>Inscreva-se para conhecer nossos planos:</p>
+                <!--Caixa email-->
+                <input type="email" name="email-inscreva" id="email-inscreva" placeholder="email@host.com">
+                <!--Botão 'increva-se' (chama função)-->
+                <input type="button" value="Inscreva-se" id="bot-inscreva" onclick="emailInscreva()">
+            </div>
         </div>
     </footer>
+    <!--Chamando Script-->
     <script src="script.js"></script>
 </body>
-
 </html>

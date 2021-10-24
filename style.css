@@ -1,40 +1,165 @@
 @charset "UTF-8";
 
-/* Algumas configurações padrões no fima do documento */ 
+/* -----------------------------INDEX.HTML-----------------------------------*/
 
-body { /* Geral*/
-    background-color: #E5E5E5;
-    font-family: Arial, Helvetica, sans-serif;
+/* ---- INÍCIO LINKS ---- */
+/* Remove sublinhado e inclui cor branca em todos os links*/
+a:link{ 
+    text-decoration: none;  /*Remove sublinhado do link*/
+    color: white;         /* Cor fonte */
+}
+/* ---- FIM LINKS ---- */
+
+
+/* ---- GERAL ---- */
+body { 
+    background-color: #E5E5E5;                  /* Cor fundo */
+    font-family: Arial, Helvetica, sans-serif;    /* Estilo fonte (o tamanho por padrão fica em 16px) */
 }
 
-header { /* Barra Superior */
-    width: 100%; /* Ocupar a tela - Lateral */
-    height: 50px; /* Altura barra */ 
-    top: 0; /* Colar barra no topo */
-    left: 0; /* Colar barra na esquerda */ 
-    right: 0; /* Colar barra na direta */
-    position: fixed; /* Fixar barra no topo */ 
-    background-color: #039EF2;
+
+/* ---- INÍCIO HEADER ---- */
+ /* BARRA SUPERIOR MENU FIXA*/
+header {
+    width: 100%;            /* Largura barra (100% pra preencher tudo) */
+    height: 50px;           /* Altura barra */ 
+    top: 0;                 /* Colar barra no topo */
+    left: 0;                /* Colar barra na esquerda */ 
+    right: 0;               /* Colar barra na direta */
+    position: fixed;        /* Fixar posição da barra */ 
+    background-color: #039EF2; /* Cor fundo*/
 }
 
-/* HEADER - MENU SUPERIOR */ 
-.menu-prelog { /* Posição - 'contato sobre' */
+/* BARRA SUPERIOR FIXO: Posição links menu superior*/ 
+.menu-superior {              
+    float: right;           /* Flutuar à direita*/
+}
+
+/* PRÉ-LOGIN Outras configurações 'contato/sobre' */ 
+.contato, .sobre{ 
+    margin-right: 52px;     /* Distância da margem e entre nomes */
+    font-weight: bold;      /* Fonte negrito */
+    display: inline-block;  /* Fixa os nomes em linha horizontal */
+}
+
+/* POS LOGIN: Outras configurações 'sobre/usuario/sair' */
+.usuario-pos, .sobre-pos, .sair-pos{ 
+    margin-right: 52px;     /* Distância da margem e entre nomes */
+    font-weight: bold;      /* Fonte negrito */
+    display: inline-block;  /* Fixa os nomes em linha horizontal */
+}
+/* ---- FIM HEADER ----*/
+
+
+/* ---- FOOTER PRÉ ---- */
+.footer-pre { /* barra*/
+    width: 100%;            /* Largura barra (100% pra preencher tudo) */
+    height: 150px;          /* Altura barra */
+    bottom: 0;              /* Colar barra na base */ 
+    left: 0;                /* Colar barra na esquerda */
+    right:0;                /* Colar barra na direita */
+    position: fixed;        /* Fixar posição da barra*/
+    background-color: #07679A; /* Cor fundo*/
+}
+
+.elementos-pre{  /* 'planos/contato/sefaz' no rodapé */
+    float: left;            /* Flutuar à esquerda*/
+    margin-left: 140px;     /* Distância margem esquerda*/
+    margin-top: 12px;       /* Distância margem acima */
+    line-height: 32px;      /* Distância entre linhas */
+    font-size: 1em;         /* Tamanho da fonte */
+}
+
+.email-rodape-pre {  /* 'caixa email e parágrafo' */
+    float: right;           /* Flutuar à direita*/
+    margin-right: 140px;    /* Distância margem direita*/
+    margin-top: 36px;       /* Distância margem acima */
+    line-height: 2px;       /* Distância entre linhas (frase e caixa email) */
+    font-size: 1em;         /* Tamanho fonte */
+    color: white;         /*Cor fonte*/
+}
+
+#bot-inscreva {  /* botão 'inscreva-se'*/
+    width: 130px;                 /* Largura*/
+    height: 30px;                 /* Altura */
+    border-radius: 15px;          /* Arredondamento */
+    border-color: #3e8cb6;      /* Cor borda */
+    background-color: #48b8f5;  /* Cor fundo */
+    font-weight: bolder;          /* Fonte negrito*/
+    font-size: 0.9em;             /* Tamanho fonte */
+    color: #ffffff;             /* Cor fonte */
+}
+
+#email-inscreva { /*  'caixa email' do 'inscreva-se'*/
+    width: 190px;                   /* Largura*/
+    height: 22px;                   /* Altura */
+    border-width: 2px;              /* Espessura da borda */
+    border-color: #3e8cb6;        /* Cor borda*/ 
+    margin-right: 8px;              /* Margem direta - distância do bot-inscreva*/
+    padding-left: 5px;              /* Distância da borda interna esquerda em relação ao elemento da caixa */
+}
+
+/*.info-icon{
     float: right;
-    padding-right: 50px;
 }
 
-.menu-prelog > ul > li { /* Alinhamento e fonte 'contato sobre' */ 
+.info{
     display: inline-block;
-    color: white;
-    font-weight: bold;
-}
-    
-#contato {  /*REVER */ 
-    margin-right: 30px;
-}
-/* FIM HEADER - MENU SUPERIOR */
+}*/
+/* ---- FIM FOOTER PRÉ ---- */
 
-/* MAIN - LOGIN */
+/* ---- FOOTER PÓS ---- */
+.footer-pos {  /* barra*/
+    width: 100%;            /* Largura barra (100% pra preencher tudo) */
+    height: 95px;          /* Altura barra */
+    bottom: 0;              /* Colar barra na base */ 
+    left: 0;                /* Colar barra na esquerda */
+    right:0;                /* Colar barra na direita */
+    position: fixed;        /* Fixar posição da barra*/
+    background-color: #07679A; /* Cor fundo*/
+}
+
+.elementos-pos{  /*  'sefaz' no rodapé */
+    float: left;            /* Flutuar à esquerda*/
+    margin-left: 140px;     /* Distância margem esquerda*/
+    margin-top: 20px;       /* Distância margem acima */
+    line-height: 32px;      /* Distância entre linhas */
+    font-size: 1em;         /* Tamanho da fonte */
+}
+
+.email-rodape-pos {  /* caixa email e enviar' */
+    float: right;           /* Flutuar à direita*/
+    margin-right: 140px;    /* Distância margem direita*/
+    margin-top: 20px;       /* Distância margem acima */
+    line-height: 2px;       /* Distância entre linhas (frase e caixa email) */
+    font-size: 1em;         /* Tamanho fonte */
+    color: white;         /*Cor fonte*/
+}
+
+#bot-enviar { /* botão 'enviar'*/
+    width: 130px;                 /* Largura*/
+    height: 30px;                 /* Altura */
+    border-radius: 15px;          /* Arredondamento */
+    border-color: #3e8cb6;      /* Cor borda */
+    background-color: #48b8f5;  /* Cor fundo */
+    font-weight: bolder;          /* Fonte negrito*/
+    font-size: 0.9em;             /* Tamanho fonte */
+    color: #ffffff;             /* Cor fonte */
+}
+
+#email-enviar {  /* 'caixa email' do 'enviar*/
+    width: 190px;                   /* Largura*/
+    height: 22px;                   /* Altura */
+    border-width: 2px;              /* Espessura da borda */
+    border-color: #3e8cb6;        /* Cor borda*/ 
+    margin-right: 8px;              /* Margem direta - distância do bot-inscreva*/
+    padding-left: 5px;              /* Distância da borda interna esquerda em relação ao elemento da caixa */
+}
+
+/* ---- FIM FOOTER RODAPÉ ---- */  
+
+
+/* ---- MAIN - LOGIN  ---- */
 main { /* Tela Login - Configurações Gerais*/
     width: 480px;
     height: 600px;
@@ -52,119 +177,54 @@ main > p { /* Título - REPX - Repositório XML e NF-e*/
     font: normal bold 1.5em arial, "sans serif";
  }
 
- .linha-horizontal { /* Linha abaixo de REPX*/
-    margin: auto;
-    width: 400px;
-    background-color: rgb(105, 105, 105);
-    border: 2px solid rgb(105, 105, 105);
- }
-
-#email, #senha { /* Caixas 'email e senha' */
-    font-size: 1em;
-    width: 300px;
-    height: 35px; 
-    border-color: #d4d4d4; /* Usar de padrão para outras caixas*/
-    border-width: 3px; /* Espessura da borda */ 
-    border-radius: 5px;
-    
+.linha-horizontal { /* Linha abaixo de REPX*/
+   margin: auto;
+   width: 400px;
+   background-color: rgb(105, 105, 105);
+   border: 2px solid rgb(105, 105, 105);
 }
 
-#bot-entrar { /* Botão Entrar - Login */
-    width: 150px;
-    height: 50px;
-    margin-top: 30px;
-    background-color: #039EF2;
-    border-radius: 30px; /* Arredondamento */ 
-    border-width: 5px; /* Espessura da borda*/ 
-    border-color: #0e98e27a ;
-    color: white;
-    font: normal bold 1em arial, "sans serif" ;
+#email, #senha { /* Caixas 'email e senha' */
+   font-size: 1em;
+   width: 300px;
+   height: 35px; 
+   border-color: #d4d4d4;     /* Usar de padrão para outras caixas*/
+   border-width: 3px;           /* Espessura da borda */ 
+   border-radius: 5px;
+   
 }
 
 label { /* Nomes 'Email e Senha' */ 
-    display: block; /* Para deixar no centro */ 
-	margin: 30px 0 6px 0;
-	font-size: 1.2em;
+    display: block;                /* Para deixar no centro */ 
+    margin: 30px 0px 6px 0;
+    font-size: 1.2em;
+ }
+
+#bot-entrar { /* Botão Entrar - Login */
+   width: 150px;
+   height: 50px;
+   margin-top: 30px;
+   background-color: #039EF2;
+   border-radius: 30px;              /* Arredondamento */ 
+   border-width: 5px;                /* Espessura da borda*/ 
+   border-color: #0e98e27a ;
+   color: white;
+   font: normal bold 1em arial, "sans serif" ;
+}
+
+.msg-naocad{
+    margin-top: 60px;
 }
 
 #bot-cadastrar { /* Botão Cadastrar*/
-    width: 170px;
-    height: 50px;
-    margin-top: 30px;
-    background-color: #039EF2;
-    border-radius: 30px; /* Arredondamento */ 
-    border-width: 5px; /* Espessura da borda*/ 
-    border-color: #0e98e27a ;
-    color: white;
-    font: normal bold 1em arial, "sans serif" ;
+   width: 170px;
+   height: 50px;
+   margin-top: 15px;                /* Distância botão em relação ao elemtento superior 'não é cad?'*/
+   border-radius: 30px;             /* Arredondamento */ 
+   border-width: 5px;               /* Espessura da borda*/ 
+   border-color: #0e98e27a ;
+   background-color: #039EF2;
+   color: white;
+   font: normal bold 1em arial, "sans serif" ;
 }
-
-
-
-/* FIM MAIN LOGIN*/
-
-/* FOOTER - RODAPÉ*/
-footer {
-    width: 100%; /* Ocupar toda a tela - Largura */
-    height: 150px; /* Altura */
-    background-color: #07679A;
-    bottom: 0; /* Posição fundo*/ 
-    left: 0;  /* Não deixa espaço na lateral esquerda */
-    position: fixed; /* Manter fixo */
-}
-
-.opc-rodape{ /* Posição 'planos, contato, sefaz' */
-    float: left;
-    padding-left: 15px;
-
-}
-
-.opc-rodape > ul > li { /* Posição e fonte 'planos, contato, sefaz'*/
-    padding-top: 18px;
-    padding-left: 140px ;
-    color: white;
-    font-weight: light;
-    font-size: 1em; /* Tamanho Fonte - 'em' */
-    line-height: 15px;
-}
-
-.email-rodape { /* Posição 'caixa email e parágrafo' */
-    float: right;
-    padding-right: 140px;
-    line-height: 2px; /* Distância 'parágrafo' e 'caixa email'*/
-}
-
-.email-rodape > p { /* Posição e fonte 'parágrafo' */
-    padding-top: 36px;
-    text-align: left;
-    font-size: 1em;
-    color: white;
-}
-
-#bot-inscreva{ /* Configuração botão 'inscreva-se'*/
-    width: 130px;
-    height: 30px;
-    border-radius: 15px;
-    border-color: #3e8cb6;
-    background-color: #48b8f5;
-    color: #ffffff;
-    font-weight: bolder;
-    font-size: 1em;
-}
-
-#email-inscreva{ /* Configuração 'caixa email'*/
-    width: 190px;
-    height: 22px;
-    border-color: #3e8cb6;
-    border-width: 2px;
-    padding-right: 10px;
-}
-/* FIM FOOTER RODAPÉ*/
-
-/* Configuração padrão para cor botões azuis: 
-    background-color: #039EF2;
-    border-radius: 30px;  -----  Sujeito a alteração
-    border-width: 5px;  ---- Sujeito a alteração
-    border-color: #0e98e27a ;
-
-    border-color: #d4d4d4; /* Usar de padrão para outras caixas*/
+/* ---- FIM MAIN - LOGIN  ---- */
