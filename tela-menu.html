@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    
+</head>
+<body>
+    
+    <header>
+        <img class="imagem-usuário" src="imagem-do-usuario-com-fundo-preto.png" alt="">
+        <nav class="menu-usuário">
+            
+            <ul>
+                <li id="sobre">Sobre</li>
+                <!--Criar Link-->
+                <li id="botao-sair">Sair<img class="icone-sair" src="icone-sair.png" alt="Icone de sair"></li>
+               
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+    <p>Selecione a opção</p>
+    <hr>
+    <a href="tela-busca-nota.html"><input type="button" value="Buscar-NF-e" id="bot-buscar-nf" onclick="entrarLogin()"></a>
+    <a href="tela-buscar-relatórios.html"><input type="button" value="Relatorios" id="bot-relatorios" onclick="entrarLogin()"></a>
+    </main>
+    <main id="minha-conta">
+        <p>Minha conta</p>
+        <hr>
+        <a href="tela-meus-dados.html"><input type="button" value="Meus dados" id="bot-buscar-nf" onclick="entrarLogin()"></a>
+        <a href="tela-alterar-senha.html"><input type="button" value="Alterar senha" id="bot-relatorios" onclick="entrarLogin()"></a>
+        
+    </main>
+    <footer>
+        <!--Rodapé - Lado Esquerdo-->
+        <div class="opc-rodape"> 
+            <ul type="none">
+
+                <li>Sefaz Nacional</li>
+                <!--Criar Link-->
+            </ul>
+        </div>
+        <div class="fale-conosco">
+            <ul type="none">
+                <li>Fale conosco</li>
+
+            </ul>
+        </div>
+        <div class="chat">
+            <ul type="none">
+                <li>Chat</li>
+            </ul>
+        </div>
+        <div class="telefone">
+        <ul type="none">
+           <li>Telefone</li>
+        </ul>
+        </div>
+        <div class="email-rodape">
+            <p>Inscreva-se para conhecer nossos planos:</p>
+            <input type="email" name="email-inscreva" id="email-inscreva" placeholder="email@host.com">
+            <input type="button" value="Inscreva-se" id="bot-inscreva" onclick="emailInscreva()">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</body>
+</html>
