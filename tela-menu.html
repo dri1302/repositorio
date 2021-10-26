@@ -7,72 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Ícone na aba do navegador-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!--Biblioteca JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>REPX - Menu</title>
 </head>
 
 <body>
-    <div id="layout-pos"></div>
     <header>
-        <img class="imagem-usuário" src="imagem-do-usuario-com-fundo-preto.png" alt="">
-        <nav class="menu-usuário">
+        <!--PósLogin-->
+        <!--Menus superior - Fixo-->
+        <nav class="menu-superior">
             <ul>
-                <li id="sobre">Sobre</li>
-                <!--Criar Link-->
-                <li id="botao-sair">Sair<img class="icone-sair" src="icone-sair.png" alt="Icone de sair"></li>
+                <!--Opções menu superior - Pos Login-->
+                <li class="sobre-pos"><a href="tela-sobre-pos.html" target="_self" rel="next">Sobre</a></li>
+                <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <p>Selecione a opção</p>
-        <hr>
-        <a href="busca-nota.html"><input type="button" value="Buscar-NF-e" id="bot-buscar-nf"
-                onclick="entrarLogin()"></a>
-        <a href="buscar-relatórios.html"><input type="button" value="Relatorios" id="bot-relatorios"
-                onclick="entrarLogin()"></a>
-    </main>
-    <main id="minha-conta">
-        <p>Minha conta</p>
-        <hr>
-        <a href="meus-dados.html"><input type="button" value="Meus dados" id="bot-buscar-nf"
-                onclick="entrarLogin()"></a>
-        <a href="alterar-senha.html"><input type="button" value="Alterar senha" id="bot-relatorios"
-                onclick="entrarLogin()"></a>
-
+    <main class="menu-princ">
+        <p>REPX - Repositório XML-NF-e</p>
+        <div class="menu-nota">
+            <hr>
+            <p>Selecione a opção</p>
+            <hr>
+            <a href="tela-busca-xml.html"><input type="button" value="Buscar NF-e" id="bot-busca"></a>
+            <a href="tela-relatorio.html"><input type="button" value="Relatórios" id="bot-busca"></a>
+            <hr>
+        </div>
+        <div>
+            <hr>
+            <p>Minha conta</p>
+            <hr>
+            <a href="tela-usuario.html"><input type="button" value="Meus dados" id="bot-busca"></a>
+            <a href="tela-alterar-senha.html"><input type="button" value="Alterar senha" id="bot-busca"></a>
+            <hr>
+        </div>
     </main>
     <footer>
         <!--Rodapé - Lado Esquerdo-->
-        <div class="opc-rodape">
-            <ul type="none">
-
-                <li>Sefaz Nacional</li>
-                <!--Criar Link-->
-            </ul>
-        </div>
-        <div class="fale-conosco">
-            <ul type="none">
-                <li>Fale conosco</li>
-
-            </ul>
-        </div>
-        <div class="chat">
-            <ul type="none">
-                <li>Chat</li>
-            </ul>
-        </div>
-        <div class="telefone">
-            <ul type="none">
-                <li>Telefone</li>
-            </ul>
-        </div>
-        <div class="email-rodape">
-            <p>Inscreva-se para conhecer nossos planos:</p>
-            <input type="email" name="email-inscreva" id="email-inscreva" placeholder="email@host.com">
-            <input type="button" value="Inscreva-se" id="bot-inscreva" onclick="emailInscreva()">
+        <div class="footer-pos">
+            <div class="elementos-pos">
+                <ul type="none">
+                    <!--Link externo-->
+                    <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                            rel="external">Sefaz
+                            Nacional</a></li>
+                </ul>
+            </div>
+            <!--Rodapé - Lado Direto-->
+            <div class="email-rodape-pos">
+                <p>Dúvidas:
+                    <!--Caixa email-->
+                    <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
+                    <!--Botão 'enviar' (chama função)-->
+                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
+                </p>
+            </div>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>

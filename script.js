@@ -1,34 +1,41 @@
 /* --- PÓS - LOGIN ---*/ 
-// Enviar email suporte - Criar
+
+// // Entrar Login
+// function entrarLogin() {
+//     alert('FUNÇÃO: entrarLogin()');
+// }
+
+// // Cadastrar Cliente 
+// function cadastroCliente() {
+//     alert('FUNÇÃO: cadastroCliente()');
+// }
+
+
+// Enviar email suporte
 function emailSuporte() {
-    alert('ENTROU FUNÇÃO emailSuporte: emailSuporteEnviar()')
+    alert('FUNÇÃO emailSuporte()()')
 }
   
-// Entrar Login - Criar
-function entrarLogin() {
-    const log = document.querySelector('input#bot-entrar')
-    alert('ENTROU FUNÇÃO ENTRAR: entrarLogin()');
+// Busca Nota
+function buscaNota(){
+    alert('FUNÇÃO: buscaNota')
 }
 
-// Cadastrar Cliente - Criar
-function cadastrarCliente() {
-    const cad = document.querySelector('input#bot-cadastrar')
-    alert('ENTROU FUNÇÃO CADASTRO: cadastrarCliente()');
+// Buscar Relatórios
+function buscaRelatorio(){
+    alert('FUNÇÃO: buscaRelatorio()')
 }
-/* --- PÓS - LOGIN ---*/ 
+
+function atualizaDados(){
+    alert('FUNÇÃO: atualizaDados()')
+}
 
 
 
-
-// FUNÇÃO PARA ENVIO EMAIL PLANOS - BOTÃO INSCREVA-SE FOOTER
+/* --- PRÉ - LOGIN ---*/
+// Envio email planos - Criar envio
 function emailInscreva() {
     const inscreva = document.querySelector('email-rodape#bot-inscreva'); // Class#ID
     alert('ENTROU FUNÇÃO INSCREVA-SE: emailInscreva()')
 }
-// FIM FUNÇÃO PARA ENVIO EMAIL PLANOS - BOTÃO INSCREVA-SE FOOTER
 
-// Função footer enviar email suporte
-function emailSuporteEnviar() {
-    const inscreva = document.querySelector('email-rodape-pos#bot-enviar'); // Class#ID
-    alert('ENTROU FUNÇÃO INSCREVA-SE: emailSuporteEnviar()')
-}

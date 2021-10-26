@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>REPX - Busca Nota</title>
+    <title>REPX - Menu</title>
 </head>
 
 <body>
@@ -24,13 +24,20 @@
             </ul>
         </nav>
     </header>
-    <main class="mainnota"> 
-        <p class="notad1">Número NF</p><input type="number" name="notanum" id="notanum">
-        <p class="notad1">Data Inicial</p><input type="date" name="notadtin" id="notadtin">
-         <p class="notad1">Data Final</p><input type="date" name="notadtfim" id="notadtfim">
-        <p class="notad1">Razão Social</p><input type="text" name="notaraz" id="notaraz">
-        <!--<p>Chave de Acesso<input type="number" name="notachave" id="notachave"></p>
-        <p>Razão Social<input type="text" name="notacnpj" id="notacnpj"></p> -->
+    <main class="cadmain">
+        <h2>Cadastro</h2>
+        <hr>
+        <p class="pdados">Email</p>
+        <input class="cadcaixa" type="email" name="cademail" id="cademail">
+        <p class="pdados">Nome Completo</p>
+        <input class="cadcaixa" type="text" name="cadnome" id="cadnome">
+        <p class="pdados">CNPJ</p>
+        <input class="cadcaixa" type="number" name="cadcnpj" id="cadcnpj">
+        <p class="pdados">Senha</p>
+        <input class="cadcaixa" type="password" name="cadsenha" id="cadsenha">
+        <p class="pdados">Confirmar Senha</p>
+        <input class="cadcaixa" type="password" name="cadsenconf" id="cadsenconf">
+        <input type="button" value="Cadastrar" id="botcad" onclick="cadastroCliente()">
     </main>
     <footer>
         <!--Rodapé - Lado Esquerdo-->
@@ -54,8 +61,6 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>
