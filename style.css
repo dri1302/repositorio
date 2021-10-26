@@ -344,17 +344,30 @@ label { /* Nomes 'Email e Senha' */
 }
 
 /* ---- Busca nota ----*/
-.mainnota{
-    width: 700px;
-    font-size: 0.6em;
+.mainnota{ /* Primeira ul*/
+    width: 800px;
 }
-#notanum, #notadtin, #notadtfim, #notaraz{
-  /*  float: right;*/
+.mainnota >.notaul1{ /* Fonte */ 
+    font-size: 1em;
+}
+.mainnota >.notaul1>li{
     display: inline-block;
 }
-.notad1{
-    
+
+.mainnota >.notaul2{ /*Segunda Ul*/
+    font-size: 1em;
 }
+.mainnota >.notaul2>li{
+    display: inline-block;
+}
+
+
+/*
+#notanum, #notadtin, #notadtfim, #notaraz{
+    display: inline-block;
+}
+*/
+
 
 /*
 <p>Número NF<input type="number" name="notanum" id="notanum"></p>
