@@ -1,1 +1,203 @@
 @charset "UTF-8";
+
+
+body{
+    background-color: #f2f2f2;
+}
+header
+{
+    width: 100%;
+    height:50px;
+    top: 0;
+    left:0;
+    right: 0;
+    position: fixed;
+    background-color: #039ef2;
+
+}
+.menu-usuário
+{
+    float: right;
+    padding-right: 50px;
+}
+#sobre-superior{
+    float: right;
+    margin-right: 100px;
+    color: white;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+#contato{
+    float: right;
+    margin-right: 50px;
+    color: white;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+.menu-usuário  ul > li { /* Alinhamento e fonte 'contato sobre' */ 
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+#sobre
+{
+    margin-right: 25px;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    
+}
+#botao-sair
+{
+    margin-right: 30px;
+    color: black;
+    font-size: 20px;
+    float: right;
+}
+.imagem-usuário
+{
+  
+    width: 35px;
+    margin-left: 50px;
+}
+.icone-sair
+{
+    float: right;
+    width: 25px;
+    margin-right: 5px;
+    
+}
+#bot-buscar-nf { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+#bot-relatorios { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+main { 
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 780px;
+    margin-top: 250px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+#titulo-main{
+    font-size: 2.8em;  
+}
+#titulo{
+    font-size: 2.8em;
+}
+#telefone{
+    font-size: 2.8em; 
+}
+#whatsapp{
+    font-size: 2.8em;  
+}
+#email{
+    font-size: 2.8em;   
+}
+main > p { /* Título - REPX - Repositório XML e NF-e*/ 
+    font: normal bold 1.5em arial, "sans serif";
+ }
+ 
+ #sobre { 
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin:auto;
+    margin-left: 400px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+footer {
+    width: 100%; /* Ocupar toda a tela - Largura */
+    height: 100px; /* Altura */
+    background-color: #07679A;
+    bottom: 0; /* Posição fundo*/ 
+    left: 0;  /* Não deixa espaço na lateral esquerda */
+    position: fixed; /* Manter fixo */
+}
+.opc-rodape{ /* Posição 'planos, contato, sefaz' */
+    float: left;
+    padding-left: 15px;
+
+}
+.fale-conosco{
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 50px;
+    color: white;
+    font-weight: light;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+
+}
+.chat{
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 50px;
+    color: white;
+    font-weight: light;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+.telefone{
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 50px;
+    color: white;
+    font-weight: light;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+.opc-rodape > ul > li { /* Posição e fonte 'planos, contato, sefaz'*/
+    padding-top: 20px;
+    padding-left: 140px ;
+    color: white;
+    font-weight: light;
+    font-size: 1.2em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+.email-rodape { /* Posição 'caixa email e parágrafo' */
+    float: right;
+    padding-right: 140px;
+    line-height: 2px; /* Distância 'parágrafo' e 'caixa email'*/
+}
+
+.email-rodape > p { /* Posição e fonte 'parágrafo' */
+    padding-top: 20px;
+    text-align: left;
+    font-size: 1em;
+    color: white;
+}
+
