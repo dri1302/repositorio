@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="tela-cadastro-usuario.css">
+    
+    <title>REPX - Menu</title>
+</head>
+
+<body>
+    <header> <!--Pós Login-->
+        <!--Menus superior - Fixo-->
+        <nav class="menu-superior">
+            <ul>
+                <!--Opções menu superior - Pos Login-->
+                <li class="sobre-pos"><a href="tela-sobre-pos.html" target="_self" rel="next">Sobre</a></li>
+                <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cadmain">
+        <h2><em>Nos conte sobre você e sua empresa</em></h2>
+        <hr>
+        <p class="pdados"><em>Email</em></p>
+        <input class="cadcaixa" type="email" name="cademail" id="cademail">
+        <p class="pdados"><em>Nome Completo</em></p>
+        <input class="cadcaixa" type="text" name="cadnome" id="cadnome">
+        <p class="pdados"><em>CNPJ</em></p>
+        <input class="cadcaixa" type="number" name="cadcnpj" id="cadcnpj">
+        <p class="pdados"><em>Senha</em></p>
+        <input class="cadcaixa" type="password" name="cadsenha" id="cadsenha">
+        <p class="pdados"><em>Confirmar Senha</em></p>
+        <input class="cadcaixa" type="password" name="cadconfsenha" id="cadconfsenha">
+        <input type="button" value="Cadastrar" id="botcad" onclick="cadastroCliente()">
+    </main>
+    <footer>
+        <!--Rodapé - Lado Esquerdo-->
+        <div class="footer-pos">
+            <div class="elementos-pos">
+                <ul type="none">
+                    <!--Link externo-->
+                    <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                            rel="external">Sefaz
+                            Nacional</a></li>
+                </ul>
+            </div>
+            <!--Rodapé - Lado Direto-->
+            <div class="email-rodape-pos">
+                <p>Dúvidas:
+                    <!--Caixa email-->
+                    <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
+                    <!--Botão 'enviar' (chama função)-->
+                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
+                </p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </footer>
+</body>
+
+</html>
