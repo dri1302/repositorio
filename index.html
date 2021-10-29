@@ -20,23 +20,19 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <p>REPX - Repositório XML e NF-e</p>
-        <!--Desenhar linha-->
-        <p class="linha-horizontal"></p>
-        <form action="">
-            <!--Ver método envio formulário para action = '' POST - GET --------->
-            <!--LOGIN: Email-->
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" placeholder="email@host.com">
-            <!--LOGIN: Senha e botão Entrar-->
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" id="senha" placeholder="********"> <br>
-            <input type="button" value="Entrar" id="bot-entrar" onclick="entrarLogin()">
-            <!--LOGIN: Não é cadastrado / Botão cadastrar-->
-            <label for="cadastrar" id="nome-cadastrar">Não é cadastrado?</label> <!--FINALIZAR CONFIG CSS-->
-            <input type="button" value="Cadastrar" id="bot-cadastrar" onclick="cadastrarCliente()">
-        </form>
+    <main class="cadmain">
+        <h2><em>Login</em></h2>
+        <hr>
+        <p class="pdados"><em>Email</em></p>
+        <input class="logincaixa" type="email" name="login-email" id="login-email">
+        <p class="pdados"><em>Senha</em></p>
+        <input class="logincaixa"  name = "" id="login-senha">
+      
+       <input class ="logincaixa" value="Login" id="botlogin" onclick="login()">
+         <p>OU</p>
+      <p id="esqsenha"><a href=""><em>Esqueci a senha</em></a></p>
+     
+
     </main>
     <footer>
         <!--Rodapé - Lado Esquerdo-->

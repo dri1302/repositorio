@@ -191,11 +191,6 @@ main > p { /* Título - REPX - Repositório XML e NF-e*/
    
 }
 
-label { /* Nomes 'Email e Senha' */ 
-    display: block;                /* Para deixar no centro */ 
-    margin: 30px 0px 6px 0;
-    font-size: 1.2em;
- }
 
 #bot-entrar { /* Botão Entrar - Login */
    width: 150px;
