@@ -35,8 +35,8 @@ function cadastroCliente() {
 
 function login() {
     // Pegando os valores lidos em nome e senha no input
-    let email = document.querySelector('#email');
-    let senha = document.querySelector('#senha')
+    let email = document.querySelector('#login-email');
+    let senha = document.querySelector('#login-senha')
   
     let validaUsuario = []; // Array vazio. Será preenchido com os itens que forem validados
   
@@ -48,20 +48,20 @@ function login() {
   
     listaUsuario.forEach(item => { 
   
-      // nome.value e senha.value são lidos lá no input. O item.nomeCad e item.senhaCad, vai pegar o que foi salvo no cadastro e atribuir ao array validaUsuario. Ou seja: O item que está sendo validado no IF será incluído nesse array
-      if (nome.value == item.nomeCad && senha.value == item.
+      // email.value e senha.value são lidos lá no input. O item.nomeCad e item.senhaCad, vai pegar o que foi salvo no cadastro e atribuir ao array validaUsuario. Ou seja: O item que está sendo validado no IF será incluído nesse array
+      if (email.value == item.emailCad && senha.value == item.
         senhaCad) { 
         // Array em que são salvos o item 
         validaUsuario = {
-          nome: item.nomeCad,
+          email: item.nomeCad,
           senha: item.senhaCad
         }
       }
     }); // Fim forEach
   
     // Fazendo nova comparação para ir para tela inicial
-    // Aqui fará uma nova comparação entre o nome.value e senha.value (do input), com as informações salvar no array validaUsuario.
-    if (nome.value == validaUsuario.nome && senha.value == validaUsuario.senha) {
+    // Aqui fará uma nova comparação entre o email.value e senha.value (do input), com as informações salvar no array validaUsuario.
+    if (email.value == validaUsuario.email && senha.value == validaUsuario.senha) {
       // Gerando números aleatórios em Math.random  ///  toString(16) vai converter para hexadecimal  ///  substr(2) vai pegar do 3º caractere em diante, ignorando os 2 primeiros (vai começar depois da vírgula)
       let token = Math.random().toString(16).substr(2);
   
@@ -69,11 +69,11 @@ function login() {
       // O token serve como uma nova validação para o usuário. Quando o usuário faz login é gerado um token aleatório, quando ele sai o token é limpado na função logOut(), que está no arquivo script-logout.js. Esse sistema permite que não seja acessada qualquer página caso não haja nenhum login. Para visualizar melhor, vá em inspecionar no navegador -> em apliccation e local storage.
       localStorage.setItem('token', token);
   
-      // No localStorage, pega as informações de validaUsuario (ou seja, o nome usuário que foi validado no login) e salva em usuarioLogado. A continuação dessa parte está em script-logout.js, da linha 4 a 8
-      localStorage.setItem(('usuarioLogado'), JSON.stringify(validaUsuario.nome));
+      // No localStorage, pega as informações de validaUsuario (ou seja, o email que foi validado no login) e salva em usuarioLogado. A continuação dessa parte está em script-logout.js, da linha 4 a 8
+      localStorage.setItem(('usuarioLogado'), JSON.stringify(validaUsuario.email));
     
       // Indo para tela inicial  
-      window.location.href = "tela-inicial.html"; 
+      window.location.href = "tela-menu.html"; 
     }
     else { // Entra nesse ELSE caso o usuário não tenha cadastro
       alert('Usuário não cadastrado');

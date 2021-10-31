@@ -100,12 +100,12 @@ main > p { /* Título - REPX - Repositório XML e NF-e*/
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
-    margin:auto;
+ margin: auto;
     margin-left: 400px;
-    margin-top: 50px;
     padding: 10px;
     font-size: 0.6em;
     text-align: center;
+    margin-bottom: 300px;
 }
 footer {
     width: 100%; /* Ocupar toda a tela - Largura */
