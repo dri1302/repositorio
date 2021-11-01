@@ -13,20 +13,21 @@
     <title>REPX - Usuário</title>
 </head>
 
-<body> <!-- Pós Login-->
+<body>
+    <!-- Pós Login-->
     <header>
         <!--Menus superior - Fixo-->
         <nav class="menu-superior">
             <ul>
                 <!--Opções menu superior - Pos Login-->
-                <li class="sobre-pos"><a href="tela-sobre-pos.html" target="_self" rel="next">Sobre</a></li>
+                <li class="contato"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
                 <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
-                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html" onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
     </header>
     <main class="mainat">
-        <section class="atdado">
+        <div class="atdado">
             <h2 class="h2atdado">Atualizar Dados</h2>
             <hr>
             <p class="patdado">Email</p>
@@ -40,8 +41,9 @@
             <p class="patdado">Confirmar Senha</p>
             <input class="cadcaixa" type="password" name="cadsenconf" id="atsenconf"><br>
             <a href="#"><input type="button" value="Atualizar" id="botat" onclick="atualizaDados()"></a>
-        </section>
+            <p class="retInicio"><a href="tela-menu.html">Retornar ao menu</a></p>
     </main>
+    </div>
     <footer>
         <!--Rodapé - Lado Esquerdo-->
         <div class="footer-pos">

@@ -8,19 +8,19 @@
     <!--Ícone na aba do navegador-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     
     <title>REPX - Menu</title>
 </head>
 
 <body>
-    <header> <!--Pós Login-->
-        <!--Menus superior - Fixo-->
+    <header>
+        <!--Menus superior - Pré Login-->
         <nav class="menu-superior">
             <ul>
-                <!--Opções menu superior - Pos Login-->
-                <li class="sobre-pos"><a href="tela-sobre-pos.html" target="_self" rel="next">Sobre</a></li>
-                <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
-                <li class="sair-pos" target="_self" rel="prev"><a href="index.html">Sair</a></li>
+                <!--Link interno-->
+                <li class="contato"><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
+                <li class="sobre" target="_self" rel="next"><a href="tela-sobre-pre.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
@@ -38,12 +38,16 @@
         <p class="pdados"><em>Confirmar Senha</em></p>
         <input class="cadcaixa" type="password" name="cadconfsenha" id="cadconfsenha">
         <input type="button" value="Cadastrar" id="botcad" onclick="cadastroCliente()">
+        <p class="retInicio"><a href="index.html">Retornar ao início</a></p>
     </main>
     <footer>
-        <!--Rodapé - Lado Esquerdo-->
-        <div class="footer-pos">
-            <div class="elementos-pos">
+        <div class="footer-pre">
+            <!--Rodapé - Lado Esquerdo-->
+            <div class="elementos-pre">
                 <ul type="none">
+                    <!--Link interno-->
+                    <li><a href="tela-planos.html" target="_self" rel="next">Planos</a></li>
+                    <li><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
                     <!--Link externo-->
                     <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
                             rel="external">Sefaz
@@ -51,16 +55,14 @@
                 </ul>
             </div>
             <!--Rodapé - Lado Direto-->
-            <div class="email-rodape-pos">
-                <p>Dúvidas:
-                    <!--Caixa email-->
-                    <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
-                    <!--Botão 'enviar' (chama função)-->
-                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
-                </p>
+            <div class="email-rodape-pre">
+                <p>Inscreva-se para conhecer nossos planos:</p>
+                <!--Caixa email-->
+                <input type="email" name="email-inscreva" id="email-inscreva" placeholder="email@host.com">
+                <!--Botão 'increva-se' (chama função)-->
+                <input type="button" value="Inscreva-se" id="bot-inscreva" onclick="emailInscreva()">
             </div>
         </div>
-        <script src="script.js"></script>
     </footer>
 </body>
 

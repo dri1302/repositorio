@@ -14,18 +14,33 @@
 </head>
 
 <body>
-    <header> <!-- Pós Login-->
+    <header>
+        <!-- Pós Login-->
         <!--Menus superior - Fixo-->
         <nav class="menu-superior">
             <ul>
                 <!--Opções menu superior - Pos Login-->
-                <li class="sobre-pos"><a href="tela-sobre-pos.html" target="_self" rel="next">Sobre</a></li>
                 <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
-                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html" onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <main>Tela sobre pos</main>
+    <main>
+        <p>REPX CLOUD SYSTEM LTDA</p>
+        <hr>
+        <div>
+            <p>Contato</p>
+            <ul type="none">
+                <li>Telefone: (xx)xxxx-xxxx</li>
+                <hr>
+                <li>WhastApp: (xx)xxxx-xxxx</li>
+                <hr>
+                <li>Email: contato@repx.com</li>
+                <hr>
+            </ul>
+            <p class="retInicio"><a href="tela-menu.html">Retornar ao menu</a></p>
+        </div>
+    </main>
     <footer>
         <!--Rodapé - Lado Esquerdo-->
         <div class="footer-pos">
@@ -43,7 +58,7 @@
                     <!--Caixa email-->
                     <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
                     <!--Botão 'enviar' (chama função)-->
-                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
+                    <input type="button" value="Enviar" id="bot-enviar">
                 </p>
             </div>
         </div>
