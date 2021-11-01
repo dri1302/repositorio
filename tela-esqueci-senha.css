@@ -36,8 +36,8 @@ header { /* Barra Superior */
 
 /* MAIN - LOGIN */
 main { /* Tela Login - Configurações Gerais*/
-    width: 450px;
-    height: 450px;
+    width: 440px;
+    height: 300px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
@@ -49,7 +49,7 @@ main { /* Tela Login - Configurações Gerais*/
 }
 
 main > p { /* Título - REPX - Repositório XML e NF-e*/ 
-    font: normal bold 1.5em arial, "sans serif";
+    font: normal bold 0.78em arial, "sans serif";
  }
 
  .linha-horizontal { /* Linha abaixo de REPX*/
@@ -62,27 +62,29 @@ main > p { /* Título - REPX - Repositório XML e NF-e*/
 
 
 
-#bot-entrar { /* Botão Entrar - Login */
-    width: 150px;
-    height: 50px;
-    margin-top: 30px;
-    background-color: #039EF2;
-    border-radius: 30px; /* Arredondamento */ 
-    border-width: 5px; /* Espessura da borda*/ 
-    border-color: #0e98e27a ;
-    color: white;
-    font: normal bold 1em arial, "sans serif" ;
-}
-
 label { /* Nomes 'Email e Senha' */ 
     display: block; /* Para deixar no centro */ 
 	margin: 30px 0 6px 0;
 	font-size: 1.2em;
 }
 
-#bot-cadastrar { /* Botão Cadastrar*/
-    width: 170px;
-    height: 50px;
+.pdados{  /* nomes */
+    font-size: 0.9em;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 3px;
+    
+
+}
+
+.cadmain>h2{
+    margin-top: 2px;
+    
+}
+#botEnviarEmail{
+    
+    width: 150px;
+    height: 35px;
     margin-top: 30px;
     background-color: #039EF2;
     border-radius: 30px; /* Arredondamento */ 
@@ -90,46 +92,17 @@ label { /* Nomes 'Email e Senha' */
     border-color: #0e98e27a ;
     color: white;
     font: normal bold 1em arial, "sans serif" ;
-}
-.pdados{  /* nomes */
-    font-size: 0.9em;
-    text-align: left;
-    margin-left: 10px;
-    margin-bottom: 3px;
+    font-size:15px;
     
 }
-.cadmain{
-    width: 400px;
-     box-shadow: 2px 2px 1px 1px;
-}
-
-.cadmain>h2{
-    margin-top: 2px;
-    
-}
-.logincaixa{
-    
-    padding: 10px;
-    width: 370px;
+#inputRecuperarSenha{
+    height: 35px;
+    width: 100%;
     margin-right: 505px;
     font-size: 20px;
     box-shadow: 2px 2px 1px 0px;
     border-radius: 10px;
-    
 }
-#botlogin{ /* Botão cadastrar em tela de cadastro*/
-    width: 180px;
-    height: 25px;
-    margin-top: 38px;             
-    border-radius: 30px;             /* Arredondamento */ 
-    border-width: 5px;               /* Espessura da borda*/ 
-    border-color: #0e98e27a ;
-    background-color: #039EF2;
-    color: white;
-    font: normal bold 1em arial, "sans serif" ;
-    text-align: center;
-    margin-left: 100px;
- }
  #esqsenha{ 
  margin-left:30px;
 font-size: 22px;
