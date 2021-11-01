@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>REPX - XML e NF-e</title>
+</head>
+
+<body>
+    <!--Login-->
+    <header> 
+        <!--Menus superior - Pré Login-->
+        <nav class="menu-superior">
+            <ul>
+                <!--Link interno-->
+                <li class="contato"><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
+                <li class="sobre" target="_self" rel="next"><a href="tela-sobre-pre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>REPX - Repositório XML e NF-e</p>
+        <!--Desenha linha-->
+        <p class="linha-horizontal"></p>
+        <form action="">
+            <!--LOGIN: Email-->
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="email@host.com">
+
+            <!--LOGIN: Senha e botão Entrar-->
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="********"> <br>
+            <input type="button" value="Entrar" id="bot-entrar" onclick="login()">
+
+            <!--LOGIN: Não é cadastrado / Botão cadastrar-->
+            <div class="msg-naocad">Não é cadastrado?</div>
+            <a href="tela-cadastro-usuario.html"><input type="button" value="Cadastrar" id="bot-cadastrar"></a>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-pre">
+            <!--Rodapé - Lado Esquerdo-->
+            <div class="elementos-pre">
+                <ul type="none">
+                    <!--Link interno-->
+                    <li><a href="tela-planos.html" target="_self" rel="next">Planos</a></li>
+                    <li><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
+                    <!--Link externo-->
+                    <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                            rel="external">Sefaz
+                            Nacional</a></li>
+                </ul>
+            </div>
+            <!--Rodapé - Lado Direto-->
+            <div class="email-rodape-pre">
+                <p>Inscreva-se para conhecer nossos planos:</p>
+                <!--Caixa email-->
+                <input type="email" name="email-inscreva" id="email-inscreva" placeholder="email@host.com">
+                <!--Botão 'increva-se' (chama função)-->
+                <input type="button" value="Inscreva-se" id="bot-inscreva" onclick="emailInscreva()">
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script-login.js"></script>    
+   <!-- <script src="script-logout.js"></script>        -->
+</body>
+
+</html>
