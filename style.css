@@ -21,6 +21,7 @@ header { /* Barra Superior */
 .menu-prelog { /* Posição - 'contato sobre' */
     float: right;
     padding-right: 50px;
+    
 }
 
 .menu-prelog > ul > li { /* Alinhamento e fonte 'contato sobre' */ 
@@ -31,6 +32,7 @@ header { /* Barra Superior */
     
 #contato {  /*REVER */ 
     margin-right: 30px;
+    
 }
 /* FIM HEADER - MENU SUPERIOR */
 
@@ -120,14 +122,14 @@ label { /* Nomes 'Email e Senha' */
 #botlogin{ /* Botão cadastrar em tela de cadastro*/
     width: 180px;
     height: 25px;
-    margin-top: 38px;             
+    margin-top: px;             
     border-radius: 30px;             /* Arredondamento */ 
     border-width: 5px;               /* Espessura da borda*/ 
     border-color: #0e98e27a ;
     background-color: #039EF2;
     color: white;
     font: normal bold 1em arial, "sans serif" ;
-    text-align: center;
+
     margin-left: 100px;
  }
  #esqsenha{ 

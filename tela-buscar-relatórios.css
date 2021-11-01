@@ -1,1 +1,416 @@
 @charset "UTF-8";
+
+body{
+    background-color: #f2f2f2;
+}
+header
+{
+    width: 100%;
+    height:50px;
+    top: 0;
+    left:0;
+    right: 0;
+    position: fixed;
+    background-color: #039ef2;
+
+}
+.menu-relatorios
+{
+    float: right;
+    padding-right: 50px;
+}
+.menu-relatorios ul > li { /* Alinhamento e fonte 'contato sobre' */ 
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+#contato {  
+    margin-right: 30px;
+}
+
+.menu-relatorios{
+    float: right;
+    padding-right: 50px;
+}
+.menu-relatorios u> li > {
+    display:inline-block;
+    color: white;
+    font-weight: bold;
+    padding: 40px;
+
+}
+
+.imagem-usuário
+{
+  
+    width: 35px;
+    margin-left: 50px;
+}
+.icone-sair
+{
+    float: right;
+    width: 25px;
+    margin-right: 5px;
+    
+}
+#bot-buscar-nf { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+#bot-relatorios { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+#data-inicial{
+    float: right;
+    height: 35px;
+    width: 190px;
+    margin-right: 80px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(98, 98, 209);
+    font-size: 1.8em;
+    font-family: monospace;
+}
+#data-final{
+    float: right;
+    height: 35px;
+    width: 190px;
+    margin-right: 85px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(98, 98, 209);
+    font-size: 1.8em;
+    font-family: monospace;
+    
+    
+}
+#razao-social{
+    float: right;
+    height: 35px;
+    width: 700px;
+    margin-right: 110px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(98, 98, 209);
+    font-size: 1.8em;
+    
+    
+    
+}
+#cnpj{
+    float: right;
+    height: 35px;
+    width: 200px;
+    margin-right: 300px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(98, 98, 209)
+}
+
+#bot-procurar{
+     
+    width: 180px;
+    height: 30px;  
+    border-radius: 30px;             /* Arredondamento */ 
+    border-width: 5px;               /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    background-color: #039EF2;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    margin-right: 350px;
+    margin-top: 15px;
+    font-size: 15px;
+    
+    
+
+    
+}
+
+#menu-superior { 
+    width: 100%;
+    height: 130px;
+    background-color:#caecff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+#menu-infos{
+    width: 100%;
+    height: 70px;
+    background-color:#eff8ff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center; 
+}
+::placeholder{
+    font-family: monospace;
+    font: bold;
+    
+    
+}
+
+main > p { /* Título - REPX - Repositório XML e NF-e*/ 
+    font: normal bold 1.5em arial, "sans serif";
+ }
+ 
+ #minha-conta { 
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+ margin: auto;
+    margin-left: 400px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+    margin-bottom: 300px;
+}
+#menu-infos{
+    width: 100%;
+    height: 60px;
+    background-color:#eff8ff;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+    
+}
+#resultados{
+    width: 100%;
+    height: 60px;
+    background-color:white;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 1px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+.checkbox{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.numero-nf{
+    float: left;
+    margin-left: 70px;
+    font-size: 2.8em;
+    margin-top: 8px;
+    
+}
+.data-emissao{
+    float: left;
+    margin-left: 100px;
+    font-size: 2.8em;
+    margin-top: 8px;
+}
+.procura-razao-social{
+    float: left;
+    margin-left: 130px;
+    font-size: 2.8em;
+    margin-top: 8px;
+}
+.chave-acesso{
+    float: left;
+    margin-left: 190px;
+    font-size: 2.8em;
+    margin-top: 8px;
+}
+.valor{
+    float: left;
+    margin-left: 200px;
+    font-size: 2.8em;
+    margin-top: 8px;
+}
+.download{
+    float: left;
+    margin-left: 200px;
+    font-size: 2.8em;
+    margin-top: 8px;
+
+}
+
+#display-numero-nf{
+    float: left;
+    margin-left:90px;
+    font-size: 15px;
+    margin-top: 10px; 
+    height: 35px;
+    width: 150px;
+    margin-right: 300px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(140, 140, 201)
+}
+#display-data-emissao{
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 35px;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(140, 140, 201)
+}
+#display-razao-social{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 35px;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(140, 140, 201)
+}
+#display-chave-acesso{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 35px;
+    width: 150px;
+    margin-right:50px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(140, 140, 201)
+}
+#display-valor{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 35px;
+    width: 150px;
+    margin-right:50px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(140, 140, 201)
+}
+#display-dowload{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 35px;
+    width: 150px;
+    margin-right:50px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    border-color:rgb(140, 140, 201)
+}
+
+footer {
+    width: 100%; /* Ocupar toda a tela - Largura */
+    height: 100px; /* Altura */
+    background-color: #07679A;
+    bottom: 0; /* Posição fundo*/ 
+    left: 0;  /* Não deixa espaço na lateral esquerda */
+    position: fixed; /* Manter fixo */
+}
+.opc-rodape{ /* Posição 'planos, contato, sefaz' */
+    float: left;
+    padding-left: 15px;
+
+}
+.fale-conosco{
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 50px;
+    color: white;
+    font-weight: light;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+
+}
+.chat{
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 50px;
+    color: white;
+    font-weight: light;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+.telefone{
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-left: 50px;
+    color: white;
+    font-weight: light;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+.opc-rodape > ul > li { /* Posição e fonte 'planos, contato, sefaz'*/
+    padding-top: 20px;
+    padding-left: 140px ;
+    color: white;
+    font-weight: light;
+    font-size: 1.4em; /* Tamanho Fonte - 'em' */
+    line-height: 15px;
+}
+.email-rodape { /* Posição 'caixa email e parágrafo' */
+    float: right;
+    padding-right: 140px;
+    line-height: 2px; /* Distância 'parágrafo' e 'caixa email'*/
+}
+
+.email-rodape > p { /* Posição e fonte 'parágrafo' */
+    padding-top: 20px;
+    text-align: left;
+    font-size: 1em;
+    color: white;
+}
+
