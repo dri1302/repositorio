@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>REPX - Nossos Planos</title>
+</head>
+
+<body>
+    <header><!--Pré Login-->
+        <!--Menus superior - Pré Login-->
+        <nav class="menu-superior">
+            <ul>
+                <!--Link interno-->
+                <li class="contato"><a href="tela-contato.html" target="_self" rel="next">C ontato</a></li>
+                <li class="sobre" target="_self" rel="next"><a href="tela-sobre-pre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>Tela PLanos</main>
+    <footer>
+        <div class="footer-pre">
+            <!--Rodapé - Lado Esquerdo-->
+            <div class="elementos-pre">
+                <ul type="none">
+                    <!--Link interno-->
+                    <li><a href="tela-planos.html" target="_self" rel="next">Planos</a></li>
+                    <li><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
+                    <!--Link externo-->
+                    <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                            rel="external">Sefaz
+                            Nacional</a></li>
+                </ul>
+            </div>
+            <!--Rodapé - Lado Direto-->
+            <div class="email-rodape-pre">
+                <p>Inscreva-se para conhecer nossos planos:</p>
+                <!--Caixa email-->
+                <input type="email" name="email-inscreva" id="email-inscreva" placeholder="email@host.com">
+                <!--Botão 'increva-se' (chama função)-->
+                <input type="button" value="Inscreva-se" id="bot-inscreva" onclick="emailInscreva()">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
