@@ -8,6 +8,7 @@
     <!--Ícone na aba do navegador-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script-logout.js"></script>
     <script src="script.js"></script>
     <title>REPX - Usuário</title>
 </head>
@@ -20,7 +21,7 @@
                 <!--Opções menu superior - Pos Login-->
                 <li class="sobre-pos"><a href="tela-sobre-pos.html" target="_self" rel="next">Sobre</a></li>
                 <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
-                <li class="sair-pos" target="_self" rel="prev"><a href="index.html">Sair</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +39,7 @@
             <input class="cadcaixa" type="password" name="cadsenha" id="atsenha">
             <p class="patdado">Confirmar Senha</p>
             <input class="cadcaixa" type="password" name="cadsenconf" id="atsenconf"><br>
-            <a href="tela-menu.html"><input type="button" value="Atualizar" id="botat" onclick="atualizaDados()"></a>
+            <a href="#"><input type="button" value="Atualizar" id="botat" onclick="atualizaDados()"></a>
         </section>
     </main>
     <footer>

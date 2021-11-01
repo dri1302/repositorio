@@ -280,7 +280,8 @@ label { /* Nomes 'Email e Senha' */
 
 /*---- Cadastro Cliente ----*/
 .cadmain{
-    width: 300px;
+    width: 400px;
+     box-shadow: 2px 2px 1px 1px;
 }
 
 .cadmain>h2{
@@ -292,12 +293,16 @@ label { /* Nomes 'Email e Senha' */
     text-align: left;
     margin-left: 10px;
     margin-bottom: 3px;
+    
 }
 
 .cadcaixa{
     padding: 10px;
-    width: 270px;
+    width: 100%;
     margin-right: 505px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 10px;
 }
 
 #botcad{ /* Botão cadastrar em tela de cadastro*/
@@ -311,11 +316,12 @@ label { /* Nomes 'Email e Senha' */
    color: white;
    font: normal bold 1em arial, "sans serif" ;
 }
+    
 
 /*--- Meus dados - atualizar dados---*/
 .mainat{ /* main dados */
     width: 300px;
-    height: 580px;
+    height: 600px;
     padding: 60px;
     margin-top: 90px;
 }
