@@ -272,7 +272,7 @@ label { /* Nomes 'Email e Senha' */
 /*---- Cadastro Cliente ----*/
 .cadmain{
     width: 400px;
-    margin-top: 60px;
+    margin-top: 100 px;
     height: 670px;
     box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
 }
@@ -317,7 +317,6 @@ label { /* Nomes 'Email e Senha' */
     width: 400px;
     height: 660px;
     padding: 60px;
-    margin-top: 0px;
 }
 
 .patdado{ /* nomes */ 
@@ -344,32 +343,64 @@ label { /* Nomes 'Email e Senha' */
     margin-bottom: 15px;
 }
 
+
+
 /* ---- Busca nota ----*/
+
 .mainnota{ /* Primeira ul*/
     width: 100%;
-    margin: 0px;
+    margin: auto;
     border-radius: 0px;
-    padding: 50px;
-    float:right;
+    float: right;
+    height: 200px;
+    padding: 40px;
+    background-color: white;
+
 }
 
-.mainnota >.notaul1{ /* Fonte */ 
-    font-size: 1em;
-}
-.mainnota >.notaul1>li{
+.notaul1>li{
     display: inline-block;
-    
+    font-size: 1em;
+    margin-left: 10px;
+    margin-bottom: 0px;
 }
 
-/*.cadcaixa{
+.notad1{ /*texto nomes num nota cnpj...*/
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.inputDataNf{
     padding: 10px;
-    width: 100%;
-    margin-right: 505px;
-    font-size: 20px;
-    box-shadow: 2px 2px 1px 0px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
     border-radius: 10px;
 }
-*/
+
+.inputRazao{
+    width: 400px;
+    padding: 12px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    border-radius: 10px;
+}
+
+.inputChave{
+    width: 460px;
+    padding: 11px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    border-radius: 10px;
+}
+
+.inputCnpj{
+    width: 460px;
+    padding: 11px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    border-radius: 10px;
+}
+
+#btnBuscaNota{
+    float: right;
+}
 
 .mainnota >.notaul2{ /*Segunda Ul*/
     font-size: 1em;
@@ -388,17 +419,3 @@ label { /* Nomes 'Email e Senha' */
     font-size: 12pt;
 }
 
-/*
-#notanum, #notadtin, #notadtfim, #notaraz{
-    display: inline-block;
-}
-*/
-
-
-/*
-<p>Número NF<input type="number" name="notanum" id="notanum"></p>
-<p>Data Inicial<input type="date" name="notadtin" id="notadtin"></p>
-<p>Data Final<input type="date" name="notadtfim" id="notadtfim"></p>
-<p>Razão Social<input type="text" name="notaraz" id="notaraz"></p>
-<p>Chave de Acesso<input type="number" name="notachave" id="notachave"></p>
-<p>Razão Social<input type="text" name="notacnpj" id="notacnpj"></p>*/

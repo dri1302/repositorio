@@ -28,26 +28,27 @@
     <main class="mainnota"> 
         <ul type="none" class="notaul1">
             <li>
-                <p class="notad1">Número NF</p><input type="number" name="notanum" id="notanum" class="inputBusca1">
+                <p class="notad1">Número NF</p><input type="number" name="notanum" id="notanum" class="inputDataNf">
             </li>
             <li>
-                <p class="notad1">Data Inicial</p><input type="date" name="notadtin" id="notadtin" class="inputBusca1">
+                <p class="notad1">Data Inicial</p><input type="date" name="notadtin" id="notadtin" class="inputDataNf">
             </li>
              <li>
-                 <p class="notad1">Data Final</p><input type="date" name="notadtfim" id="notadtfim" class="inputBusca1">
+                 <p class="notad1">Data Final</p><input type="date" name="notadtfim" id="notadtfim" class="inputDataNf">
              </li>
             <li>
-                <p class="notad1">Razão Social</p><input type="text" name="notaraz" id="notaraz">
+                <p class="notad1">Razão Social</p><input type="text" name="notaraz" id="notaraz" class="inputRazao">
             </li>
         </ul>
-        <ul type="none" class="notaul2">
+        <ul type="none" class="notaul1">
             <li>
-                <p class="notad1">Chave Acesso</p><input type="number" name="notachave" id="notachave">
+                <p class="notad1">Chave Acesso</p><input type="number" name="notachave" id="notachave" class="inputChave">
             </li>
             <li>
-                <p class="notad1">CNPJ</p><input type="number" name="notacnpj" id="notacnpj">
+                <p class="notad1">CNPJ</p><input type="number" name="notacnpj" id="notacnpj" class="inputCnpj">
             </li>
         </ul>
+        <p><input type="button" value="Buscar Nota" id="btnBuscaNota" onclick="buscarNota()"></p>
     </main>
     <footer>
         <!--Rodapé - Lado Esquerdo-->

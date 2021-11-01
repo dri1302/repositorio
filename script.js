@@ -83,10 +83,20 @@ function atualizaDados() {
     }
 }
 
+function buscarNota(){
+    alert('entrou busca nota');
+}
+
+
+
+
+
+
 /* --- PRÉ - LOGIN ---*/
+/*
 // Envio email planos - Criar envio
 function emailInscreva() {
     const inscreva = document.querySelector('email-rodape#bot-inscreva'); // Class#ID
     alert('ENTROU FUNÇÃO INSCREVA-SE: emailInscreva()')
-}
+}*/
 
