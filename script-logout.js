@@ -15,3 +15,9 @@ function logOut() {
     window.location.href = "index.html"; // Direciona página do login
 }
 
+/*
+// Pegando o usuário logado no localStorage
+let usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+let logado = document.querySelector('#logado'); // Lendo o ID na div em tela-inicial.html
+// Colocando o nome do usuário logado na tela
+logado.innerHTML = `Olá ${usuarioLogado}`*/

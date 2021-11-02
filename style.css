@@ -268,6 +268,38 @@ label { /* Nomes 'Email e Senha' */
      /*height: 570px;*/
  }
 
+#dados{
+        width: 200px;
+       /* height: 570px;*/
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+        margin: auto;
+        margin-top: 200px;
+        padding-top: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 40px;
+        font-size: 1.2em;
+        text-align: left
+}
+
+#btnImprimir { /* Botão Entrar - Login */
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: #039EF2;
+    border-radius: 30px;              /* Arredondamento */ 
+    border-width: 5px;                /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 0.8em arial, "sans serif" ;
+    
+ }
+ 
+
+
 
 /*---- Cadastro Cliente ----*/
 .cadmain{
@@ -419,3 +451,295 @@ label { /* Nomes 'Email e Senha' */
     font-size: 12pt;
 }
 
+/*-------------------------------------------*/
+/**/
+
+.menu-relatorios
+{
+    float: right;
+    padding-right: 50px;
+}
+.menu-relatorios ul > li { /* Alinhamento e fonte 'contato sobre' */ 
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+
+#bot-buscar-nf { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+#bot-relatorios { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+#data-inicial{
+    float: right;
+    height: 35px;
+    width: 190px;
+    margin-right: 80px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    font-size: 1.8em;
+    font-family: monospace;
+}
+
+#data-final{
+    float: right;
+    height: 35px;
+    width: 190px;
+    margin-right: 85px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    font-size: 1.8em;
+    font-family: monospace;      
+}
+
+#razao-social{
+    float: right;
+    height: 35px;
+    width: 700px;
+    margin-right: 110px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    font-size: 1.8em;    
+}
+
+#cnpj{
+    float: right;
+    height: 35px;
+    width: 200px;
+    margin-right: 300px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+}
+
+#bot-procurar{
+ 
+    width: 180px;
+    height: 30px;  
+    border-radius: 30px;             /* Arredondamento */ 
+    border-width: 5px;               /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    background-color: #039EF2;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    margin-right: 350px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#bot-imprimir{  
+    width: 180px;
+    height: 30px;  
+    border-radius: 30px;             /* Arredondamento */ 
+    border-width: 5px;               /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    background-color: #039EF2;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+#menu-superior { 
+    width: 100%;
+    height: 130px;
+    background-color:#caecff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+#menu-infos{
+    width: 100%;
+    height: 70px;
+    background-color:#eff8ff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center; 
+}
+::placeholder{
+    font-family: monospace;
+    font: bold;
+    
+}
+
+#minha-conta { 
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+ margin: auto;
+    margin-left: 400px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+    margin-bottom: 300px;
+}
+#menu-infos{
+    width: 100%;
+    height: 35px;
+    background-color:#eff8ff;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;   
+}
+#resultados{
+    width: 100%;
+    height: 60px;
+    background-color:white;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 1px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+.checkbox{
+    float: left;
+    margin-left: 10px;
+}
+.numero-nf{
+    float: left;
+    margin-left: 100px;
+    font-size: 2em; 
+    margin-right: 1px;
+}
+
+.data-emissao{
+    float: left;
+    margin-left: 100px;
+    margin-right: 40px;
+    font-size: 2em;
+
+}
+.procura-razao-social{
+    float: left;
+    margin-left: 130px;
+    font-size: 2em;
+    margin-right: 80px;
+}
+.chave-acesso{
+    float: left;
+    margin-left: 200px;
+    margin-right: 50px;
+    font-size: 2em;
+}
+.valor{
+    float: left;
+    margin-left: 200px;
+    font-size: 2em;
+}
+.download{
+    float: left;
+    margin-left: 200px;
+    font-size: 2em;
+}
+
+#display-numero-nf{
+    float: left;
+    font-size: 15px;
+    margin-top: 10px; 
+    height: 30px;
+    width: 150px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+
+}
+#display-data-emissao{
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    margin-left: -90px;
+
+}
+#display-razao-social{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+
+}
+#display-chave-acesso{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 400px;
+    margin-right:50px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+
+}
+#display-valor{
+    float: left;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+   
+}
+    
