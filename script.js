@@ -1,163 +1,81 @@
-function cadastroCliente() {
-    let email = document.querySelector('#cademail');
-    let nome = document.querySelector('#cadnome');
-    let cnpj = document.querySelector('#cadcnpj');
-    let senha = document.querySelector('#cadsenha');
-    let confsenha = document.querySelector('#cadconfsenha');
-    let codPessoa = geraCodigoPessoa(); // Função para gerar código de usuários
+let email = document.querySelector('#cademail');
+let nome = document.querySelector('#cadnome');
+let cnpj = document.querySelector('#cadcnpj');
+let senha = document.querySelector('#cadsenha');
+let confsenha = document.querySelector('#cadconfsenha');
 
-    // Verificando se campo está preenchido com os dados
+function cadastroCliente() {
     if (email.value && nome.value && cnpj.value && senha.value && confsenha.value) {
-        if (senha.value == confsenha.value) { // Senha confere ou não
-            let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]') // Criando lista no localStorage
-            listaUsuario.push( // Adicionando dados na lista
+        if (senha.value == confsenha.value) {
+            let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]')
+            listaUsuario.push(
                 {
                     "emailCad": email.value,
                     "nomeCad": nome.value,
                     "cnpjCad": cnpj.value,
                     "senhaCad": senha.value,
-                    "cadconfsenhaCad": confsenha.value,
-                    "codCad": codPessoa
+                    "cadconfsenhaCad": confsenha.value
                 }
             );
-            // Convertendo pra string e acrescentando no localStorage os dados da lista
             localStorage.setItem('listaUsuario', JSON.stringify(listaUsuario));
-            alert('Cadastro efetuado com sucesso')
+            alert('Cadastra efetuado com sucesso')
             window.location.href = 'index.html'
+
         }
         else {
             alert('Confirmação de senha incorreta,verifique se a senha inserida esta igual')
         }
+
     }
     else {
-        window.alert('Dados incompletos,verifique')
+        window.alert('Dados imcompletos,verifique')
     }
-}
-
-// Função para gerar código de usuários - Chamada em
-// cadastroCliente()
-function geraCodigoPessoa() {
-    let i = 1;
-    let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]');
-    listaUsuario.forEach(element => {
-        i++;
-        //console.log(element);
-    });
-    return i;
-}
-
-
-
-/*
-function atualizaDados() {
-    let email = document.querySelector('#atemail');
-    let nome = document.querySelector('#atnome');
-    let cnpj = document.querySelector('#atcnpj');
-    let senha = document.querySelector('#atsenha');
-    let confsenha = document.querySelector('#atsenconf');
-
-    console.log('entrou função')
-
 
 }
 
-
-let atualizaUsuario = JSON.parse(localStorage.getItem('atualizaUsuario') || '[]');
-
- //let listaUsuario = JSON.parse(localStorage.getItem//('listaUsuario') || '[]');
-
- // Verificando se campo está preenchido com os dados
- if (email.value && nome.value && cnpj.value && senha.value && confsenha.value) {
-     if (senha.value == confsenha.value) { // Senha confere ou não
-         let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]') // Criando lista no localStorage
-         
-
-         atualizaUsuario.push( // Adicionando dados na lista
-             {
-                 "emailAtt": email.value,
-                 "nomeAtt": nome.value,
-                 "cnpjAtt": cnpj.value,
-                 "senhaAtt": senha.value,
-                 "cadconfsenhaAtt": confsenha.value,
-                 "codAtt": listaUsuario.codPessoa
-             }
-         );
-         // Convertendo pra string e acrescentando no localStorage os dados da lista
-         localStorage.setItem('atualizaUsuario', JSON.stringify(atualizaUsuario));
-         alert('Atualização efetuada com sucesso')
-         window.location.href = 'index.html'
-     }
-     else {
-         alert('Confirmação de senha incorreta,verifique se a senha inserida esta igual')
-     }
- }
- else {
-     window.alert('Dados imcompletos,verifique')
- }
-
-*/
-
-
-
-/*
-    let listaUsuario = JSON.parse(localStorage.getItem('listaUsuario'));
-    let listaAtualiza = JSON.parse(localStorage.getItem('listaAtualiza' || '[]'));
+function login() {
+    // Pegando os valores lidos em nome e senha no input
+    let email = document.querySelector('#login-email');
+    let senha = document.querySelector('#login-senha')
+  
+    let validaUsuario = []; // Array vazio. Será preenchido com os itens que forem validados
+  
+    // Pegando a listaUsuario (incluida no cadastro) no localStorage e salvando na variável listaUsuário
+    listaUsuario = JSON.parse(localStorage.getItem('listaUsuario') || '[]');
+  
+  
+    // forEach funciona igual ao for. Vai varrer o array listaUsuario e se encontrar um elemento igual ao comparado no IF, irá preencher o array validaUsuario
+  
+    listaUsuario.forEach(item => { 
+  
+      // email.value e senha.value são lidos lá no input. O item.nomeCad e item.senhaCad, vai pegar o que foi salvo no cadastro e atribuir ao array validaUsuario. Ou seja: O item que está sendo validado no IF será incluído nesse array
+      if (email.value == item.emailCad && senha.value == item.
+        senhaCad) { 
+        // Array em que são salvos o item 
+        validaUsuario = {
+          email: item.nomeCad,
+          senha: item.senhaCad
+        }
+      }
+    }); // Fim forEach
+  
+    // Fazendo nova comparação para ir para tela inicial
+    // Aqui fará uma nova comparação entre o email.value e senha.value (do input), com as informações salvar no array validaUsuario.
+    if (email.value == validaUsuario.email && senha.value == validaUsuario.senha) {
+      // Gerando números aleatórios em Math.random  ///  toString(16) vai converter para hexadecimal  ///  substr(2) vai pegar do 3º caractere em diante, ignorando os 2 primeiros (vai começar depois da vírgula)
+      let token = Math.random().toString(16).substr(2);
+  
+      // Colocando o token no localStorage
+      // O token serve como uma nova validação para o usuário. Quando o usuário faz login é gerado um token aleatório, quando ele sai o token é limpado na função logOut(), que está no arquivo script-logout.js. Esse sistema permite que não seja acessada qualquer página caso não haja nenhum login. Para visualizar melhor, vá em inspecionar no navegador -> em apliccation e local storage.
+      localStorage.setItem('token', token);
+  
+      // No localStorage, pega as informações de validaUsuario (ou seja, o email que foi validado no login) e salva em usuarioLogado. A continuação dessa parte está em script-logout.js, da linha 4 a 8
+      localStorage.setItem(('usuarioLogado'), JSON.stringify(validaUsuario.email));
     
-  //  if (localStorage.getItem('token') == null) {
-//        window.alert('Você precisa estar logado');
- //       window.location.href = "index.html";
- //   }
-
-    // let cont = 0
-    listaUsuario.forEach(item => { // percorrendo local
-        //cont++;
-        // console.log(item)
-        listaAtualiza.push({
-            "emailAtt": listaUsuario.emailCad,
-            "nomeAtt": listaUsuario.nomeCad,
-            "cnpjAtt": listaUsuario.cnpjCad,
-            "senhaAtt": listaUsuario.senhaCad,
-            "confSenhAtt": listaUsuario.cadconsfsenhacad,
-            "codAtt": listaUsuario.codCad
-        });
-    });
-    // console.log(cont)   
-    localStorage.setItem('listaUsuario', JSON.stringify(listaAtualiza));
- 
-*/
-
-
-
-
-function buscarNota() {
-    alert('entrou busca nota');
-}
-
-// Enviar email suporte
-function emailSuporte() {
-    alert('FUNÇÃO emailSuporte()()')
-}
-
-// Busca Nota
-function buscaNota() {
-    alert('FUNÇÃO: buscaNota')
-}
-
-// Buscar Relatórios
-function buscaRelatorio() {
-    alert('FUNÇÃO: buscaRelatorio()')
-}
-
-
-
-
-
-
-/* --- PRÉ - LOGIN ---*/
-/*
-// Envio email planos - Criar envio
-function emailInscreva() {
-    const inscreva = document.querySelector('email-rodape#bot-inscreva'); // Class#ID
-    alert('ENTROU FUNÇÃO INSCREVA-SE: emailInscreva()')
-}*/
-
+      // Indo para tela inicial  
+      window.location.href = "tela-menu.html"; 
+    }
+    else { // Entra nesse ELSE caso o usuário não tenha cadastro
+      alert('Usuário não cadastrado');
+    }
+  }
