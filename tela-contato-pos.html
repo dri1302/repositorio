@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script-logout.js"></script>
     <script src="script.js"></script>
-    <title>REPX - Alterar senha</title>
+    <title>REPX - Sobre</title>
 </head>
+
 <body>
-    <header> <!--Pós Login-->
+    <header>
+        <!-- Pós Login-->
         <!--Menus superior - Fixo-->
         <nav class="menu-superior">
             <ul>
                 <!--Opções menu superior - Pos Login-->
-                <li class="contato"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
                 <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
                 <li class="sair-pos" target="_self" rel="prev"><a href="index.html" onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main-tsenha">  
-        <p class="psenha" >Insira a senha atual</p>
-        <input type="password" name="seatual" id="seatual" placeholder="**************">
-        <p class="psenha">Insira a nova senha</p>
-        <input type="password" name="senova" id="senova" placeholder="**************">
-        <p class="psenha">Confirme a nova senha</p>
-        <input type="password" name="seconf" id="seconf" placeholder="**************">
-        <a href="tela-menu.html"><input type="button" value="Confirmar" id="bot-busca"></a>
+    <main>
+        <p>REPX CLOUD SYSTEM LTDA</p>
+        <hr>
+        <div>
+            <p>Contato</p>
+            <ul type="none">
+                <li>Telefone: (xx)xxxx-xxxx</li>
+                <hr>
+                <li>WhastApp: (xx)xxxx-xxxx</li>
+                <hr>
+                <li>Email: contato@repx.com</li>
+                <hr>
+            </ul>
+            <p class="retInicio"><a href="tela-menu.html">Retornar ao menu</a></p>
+        </div>
     </main>
     <footer>
         <!--Rodapé - Lado Esquerdo-->
@@ -47,10 +58,11 @@
                     <!--Caixa email-->
                     <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
                     <!--Botão 'enviar' (chama função)-->
-                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
+                    <input type="button" value="Enviar" id="bot-enviar">
                 </p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Chamando CSS-->
     <link rel="stylesheet" href="style.css">
-    <script src="script-logout.js"></script>
     <script src="script.js"></script>
-    <title>REPX - Alterar senha</title>
+    <title>REPX - XML e NF-e</title>
 </head>
+
 <body>
-    <header> <!--Pós Login-->
+    <header>
         <!--Menus superior - Fixo-->
         <nav class="menu-superior">
             <ul>
                 <!--Opções menu superior - Pos Login-->
-                <li class="contato"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
+                <li class="contato"><a href="tela-contato.html" target="_self" rel="next">Contato</a></li>
                 <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
-                <li class="sair-pos" target="_self" rel="prev"><a href="index.html" onclick="logOut()">Sair</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
             </ul>
         </nav>
     </header>
-    <main class="main-tsenha">  
-        <p class="psenha" >Insira a senha atual</p>
-        <input type="password" name="seatual" id="seatual" placeholder="**************">
-        <p class="psenha">Insira a nova senha</p>
-        <input type="password" name="senova" id="senova" placeholder="**************">
-        <p class="psenha">Confirme a nova senha</p>
-        <input type="password" name="seconf" id="seconf" placeholder="**************">
-        <a href="tela-menu.html"><input type="button" value="Confirmar" id="bot-busca"></a>
-    </main>
+    <!-- <main> Funcionalidades são colocadas aqui</main>-->
     <footer>
         <!--Rodapé - Lado Esquerdo-->
         <div class="footer-pos">
@@ -47,10 +43,11 @@
                     <!--Caixa email-->
                     <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
                     <!--Botão 'enviar' (chama função)-->
-                    <input type="button" value="Enviar" id="bot-enviar" onclick="emailSuporte()">
+                    <input type="button" value="Enviar" id="bot-enviar">
                 </p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

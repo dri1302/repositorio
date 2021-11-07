@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!--Chamando CSS-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="script-impressao-rel.js"></script>
+    <title>REPX - Busca Relatórios</title>
+</head>
+
+<body>
+    <header>
+        <!--Menus superior - Fixo-->
+        <nav class="menu-superior">
+            <ul>
+                <!--Opções menu superior - Pos Login-->
+                <li class="contato"><a href="tela-contato-pos.html" target="_self" rel="next">Contato</a></li>
+                <li class="usuario-pos"><a href="tela-usuario.html" target="_self" rel="next">Usuário</a></li>
+                <li class="sair-pos" target="_self" rel="prev"><a href="index.html"  onclick="logOut()">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="menu-superior">
+        <input type="number" name="cnpj" id="cnpj" placeholder="CNPJ">
+        <input type="text" name="razao-social" id="razao-social" placeholder="Razão Social">
+        <input type="date" name="data-final" id="data-final" placeholder="Data Final">
+        <input type="date" name="data-inicial" id="data-inicial" placeholder="Data inicial">
+        <input type="button" name="procurar" id="bot-procurar" value="Procurar" onclick="procurar()"></input>
+    </main>
+    <div id="menu-infos">
+        <div>
+            <ul type="none">
+                <li class="checkbox"> <input type="checkbox"></li>
+            </ul>
+        </div>
+        <div>
+            <ul type="none">
+                <li class="numero-nf">Numero-NF</li>
+            </ul>
+        </div>
+        <div>
+            <ul type="none">
+                <li class="data-emissao">Data de emissão</li>
+            </ul>
+        </div>
+        <div>
+            <ul type="none">
+                <li class="procura-razao-social">Razão social</li>
+            </ul>
+        </div>
+        <div>
+            <ul type="none">
+                <li class="chave-acesso">Chave de acesso</li>
+            </ul>
+        </div>
+        <div>
+            <ul type="none">
+                <li class="valor">Valor</li>
+            </ul>
+        </div>
+        <div>
+            <ul type="none">
+                <li class="download">Download</li>
+                <a href="imprimir-relatorio.html"><input type="button" name="imprimir" id="bot-imprimir" value="Imprimir" onclick="imprimirRelatorio()"></input></a>
+            </ul>
+        </div>
+
+
+    </div>
+    <div>
+        <div>
+            <input id="display-numero-nf" type="number" recebeNF()>
+        </div>
+
+        <div>
+            <input id="display-data-emissao" type="date" recebeDataEmissao()>
+        </div>
+
+        <div>
+            <input id="display-razao-social" type="text" recebeRazaoSocial()>
+        </div>
+
+        <div>
+            <input id="display-chave-acesso" type="number" recebeChaveAcesso()>
+        </div>
+        <div>
+            <input id="display-valor" type="text" recebeChaveAcesso()>
+        </div>
+    </div>
+
+    <footer>
+        <!--Rodapé - Lado Esquerdo-->
+        <div class="footer-pos">
+            <div class="elementos-pos">
+                <ul type="none">
+                    <!--Link externo-->
+                    <li><a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                            rel="external">Sefaz
+                            Nacional</a></li>
+                </ul>
+            </div>
+            <!--Rodapé - Lado Direto-->
+            <div class="email-rodape-pos">
+                <p>Dúvidas:
+                    <!--Caixa email-->
+                    <input type="email" name="email-inscreva" id="email-enviar" placeholder="email@host.com">
+                    <!--Botão 'enviar' (chama função)-->
+                    <input type="button" value="Enviar" id="bot-enviar">
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

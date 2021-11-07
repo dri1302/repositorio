@@ -1,98 +1,318 @@
 @charset "UTF-8";
 
-/* Algumas configurações padrões no fima do documento */ 
+/* -----------------------------INDEX.HTML-----------------------------------*/
 
-body { /* Geral*/
-    background-color: #E5E5E5;
-    font-family: Arial, Helvetica, sans-serif;
+/* ---- INÍCIO LINKS ---- */
+/* Remove sublinhado e inclui cor branca em todos os links*/
+a{ 
+    text-decoration: none;  /*Remove sublinhado do link*/
+    color: white;         /* Cor fonte */
+}
+/* ---- FIM LINKS ---- */
+ul{
+    list-style: none;
 }
 
-header { /* Barra Superior */
-    width: 100%; /* Ocupar a tela - Lateral */
-    height: 50px; /* Altura barra */ 
-    top: 0; /* Colar barra no topo */
-    left: 0; /* Colar barra na esquerda */ 
-    right: 0; /* Colar barra na direta */
-    position: fixed; /* Fixar barra no topo */ 
-    background-color: #039EF2;
+
+/* ---- GERAL ---- */
+body { 
+    background-color: #E5E5E5;                  /* Cor fundo */
+    font-family: Arial, Helvetica, sans-serif;    /* Estilo fonte (o tamanho por padrão fica em 16px) */
 }
 
-/* HEADER - MENU SUPERIOR */ 
-.menu-prelog { /* Posição - 'contato sobre' */
-    float: right;
-    padding-right: 50px;
-    
+
+/* ---- INÍCIO HEADER ---- */
+ /* BARRA SUPERIOR MENU FIXA*/
+header {
+    width: 100%;            /* Largura barra (100% pra preencher tudo) */
+    height: 50px;           /* Altura barra */ 
+    top: 0;                 /* Colar barra no topo */
+    left: 0;                /* Colar barra na esquerda */ 
+    right: 0;               /* Colar barra na direta */
+    position: fixed;        /* Fixar posição da barra */ 
+    background-color: #039EF2; /* Cor fundo*/
 }
 
-.menu-prelog > ul > li { /* Alinhamento e fonte 'contato sobre' */ 
-    display: inline-block;
-    color: white;
-    font-weight: bold;
+/* BARRA SUPERIOR FIXO: Posição links menu superior*/ 
+.menu-superior {              
+    float: right;           /* Flutuar à direita*/
 }
-    
-#contato {  /*REVER */ 
-    margin-right: 30px;
-    
-}
-/* FIM HEADER - MENU SUPERIOR */
 
-/* MAIN - LOGIN */
+/* PRÉ-LOGIN Outras configurações 'contato/sobre' */ 
+.contato, .sobre{ 
+    margin-right: 52px;     /* Distância da margem e entre nomes */
+    font-weight: bold;      /* Fonte negrito */
+    display: inline-block;  /* Fixa os nomes em linha horizontal */
+}
+
+/* POS LOGIN: Outras configurações 'sobre/usuario/sair' */
+.usuario-pos, .sobre-pos, .sair-pos{ 
+    margin-right: 52px;     /* Distância da margem e entre nomes */
+    font-weight: bold;      /* Fonte negrito */
+    display: inline-block;  /* Fixa os nomes em linha horizontal */
+}
+/* ---- FIM HEADER ----*/
+
+
+/* ---- FOOTER PRÉ ---- */
+.footer-pre { /* barra*/
+    width: 100%;            /* Largura barra (100% pra preencher tudo) */
+    height: 150px;          /* Altura barra */
+    bottom: 0;              /* Colar barra na base */ 
+    left: 0;                /* Colar barra na esquerda */
+    right:0;                /* Colar barra na direita */
+    position: fixed;        /* Fixar posição da barra*/
+    background-color: #07679A; /* Cor fundo*/
+}
+
+.elementos-pre{  /* 'planos/contato/sefaz' no rodapé */
+    float: left;            /* Flutuar à esquerda*/
+    margin-left: 140px;     /* Distância margem esquerda*/
+    margin-top: 12px;       /* Distância margem acima */
+    line-height: 32px;      /* Distância entre linhas */
+    font-size: 1em;         /* Tamanho da fonte */
+}
+
+.email-rodape-pre {  /* 'caixa email e parágrafo' */
+    float: right;           /* Flutuar à direita*/
+    margin-right: 140px;    /* Distância margem direita*/
+    margin-top: 36px;       /* Distância margem acima */
+    line-height: 2px;       /* Distância entre linhas (frase e caixa email) */
+    font-size: 1em;         /* Tamanho fonte */
+    color: white;         /*Cor fonte*/
+}
+
+#bot-inscreva {  /* botão 'inscreva-se'*/
+    width: 130px;                 /* Largura*/
+    height: 30px;                 /* Altura */
+    border-radius: 15px;          /* Arredondamento */
+    border-color: #3e8cb6;      /* Cor borda */
+    background-color: #48b8f5;  /* Cor fundo */
+    font-weight: bolder;          /* Fonte negrito*/
+    font-size: 0.9em;             /* Tamanho fonte */
+    color: #ffffff;             /* Cor fonte */
+}
+
+#email-inscreva { /*  'caixa email' do 'inscreva-se'*/
+    width: 190px;                   /* Largura*/
+    height: 22px;                   /* Altura */
+    border-width: 2px;              /* Espessura da borda */
+    border-color: #3e8cb6;        /* Cor borda*/ 
+    margin-right: 8px;              /* Margem direta - distância do bot-inscreva*/
+    padding-left: 5px;              /* Distância da borda interna esquerda em relação ao elemento da caixa */
+}
+
+/* ---- FIM FOOTER PRÉ ---- */
+
+
+/* ---- FOOTER PÓS ---- */
+.footer-pos {  /* barra*/
+    width: 100%;            /* Largura barra (100% pra preencher tudo) */
+    height: 95px;          /* Altura barra */
+    bottom: 0;              /* Colar barra na base */ 
+    left: 0;                /* Colar barra na esquerda */
+    right:0;                /* Colar barra na direita */
+    position: fixed;        /* Fixar posição da barra*/
+    background-color: #07679A; /* Cor fundo*/
+}
+
+.elementos-pos{  /*  'sefaz' no rodapé */
+    float: left;            /* Flutuar à esquerda*/
+    margin-left: 140px;     /* Distância margem esquerda*/
+    margin-top: 20px;       /* Distância margem acima */
+    line-height: 32px;      /* Distância entre linhas */
+    font-size: 1em;         /* Tamanho da fonte */
+}
+
+.email-rodape-pos {  /* caixa email e enviar' */
+    float: right;           /* Flutuar à direita*/
+    margin-right: 140px;    /* Distância margem direita*/
+    margin-top: 20px;       /* Distância margem acima */
+    line-height: 2px;       /* Distância entre linhas (frase e caixa email) */
+    font-size: 1em;         /* Tamanho fonte */
+    color: white;         /*Cor fonte*/
+}
+
+#bot-enviar { /* botão 'enviar'*/
+    width: 130px;                 /* Largura*/
+    height: 30px;                 /* Altura */
+    border-radius: 15px;          /* Arredondamento */
+    border-color: #3e8cb6;      /* Cor borda */
+    background-color: #48b8f5;  /* Cor fundo */
+    font-weight: bolder;          /* Fonte negrito*/
+    font-size: 0.9em;             /* Tamanho fonte */
+    color: #ffffff;             /* Cor fonte */
+}
+
+#email-enviar {  /* 'caixa email' do 'enviar*/
+    width: 190px;                   /* Largura*/
+    height: 22px;                   /* Altura */
+    border-width: 2px;              /* Espessura da borda */
+    border-color: #3e8cb6;        /* Cor borda*/ 
+    margin-right: 8px;              /* Margem direta - distância do bot-inscreva*/
+    padding-left: 5px;              /* Distância da borda interna esquerda em relação ao elemento da caixa */
+}
+
+/* ---- FIM FOOTER RODAPÉ ---- */  
+
+
+/*--- MAIN - LOGIN  ---- */
 main { /* Tela Login - Configurações Gerais*/
     width: 450px;
-    height: 450px;
+   /* height: 570px;*/
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
     margin: auto;
-    margin-top: 150px;
-    padding: 15px;
+    margin-top: 110px;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 40px;
     font-size: 1.2em;
     text-align: center;
-}
+ }
 
 main > p { /* Título - REPX - Repositório XML e NF-e*/ 
     font: normal bold 1.5em arial, "sans serif";
  }
 
- .linha-horizontal { /* Linha abaixo de REPX*/
-    margin: auto;
-    width: 400px;
-    background-color: rgb(105, 105, 105);
-    border: 2px solid rgb(105, 105, 105);
- }
-
-
-
-
-#bot-entrar { /* Botão Entrar - Login */
-    width: 150px;
-    height: 50px;
-    margin-top: 30px;
-    background-color: #039EF2;
-    border-radius: 30px; /* Arredondamento */ 
-    border-width: 5px; /* Espessura da borda*/ 
-    border-color: #0e98e27a ;
-    color: white;
-    font: normal bold 1em arial, "sans serif" ;
+#email, #senha { /* Caixas 'email e senha' */
+   padding: 5px ;
+   box-shadow: 2px 2px 1px 0px;
+   border-radius: 10px;
+   font-size: 1em;
+   width: 300px;
+   height: 35px; 
+   border-color: #d4d4d4;     /* Usar de padrão para outras caixas*/
+   border-width: 3px;           /* Espessura da borda */ 
 }
 
 label { /* Nomes 'Email e Senha' */ 
-    display: block; /* Para deixar no centro */ 
-	margin: 30px 0 6px 0;
-	font-size: 1.2em;
+    display: block;                /* Para deixar no centro */ 
+    margin: 30px 0px 6px 0;
+    font-size: 1.2em;
+ }
+
+#bot-entrar { /* Botão Entrar - Login */
+   width: 150px;
+   height: 50px;
+   margin-top: 30px;
+   background-color: #039EF2;
+   border-radius: 30px;              /* Arredondamento */ 
+   border-width: 5px;                /* Espessura da borda*/ 
+   border-color: #0e98e27a ;
+   color: white;
+   font: normal bold 1.1em arial, "sans serif" ;
+}
+
+ .msg-naocad{
+    margin-top: 60px;
 }
 
 #bot-cadastrar { /* Botão Cadastrar*/
-    width: 170px;
-    height: 50px;
-    margin-top: 30px;
+   width: 170px;
+   height: 50px;
+   margin-top: 15px;    
+   margin-bottom: 15px;            /* Distância botão em relação ao elemtento superior 'não é cad?'*/
+   border-radius: 30px;             /* Arredondamento */ 
+   border-width: 5px;               /* Espessura da borda*/ 
+   border-color: #0e98e27a ;
+   background-color: #039EF2;
+   color: white;
+   font: normal bold 1.1em arial, "sans serif" ;
+}
+/* ---- FIM MAIN - LOGIN  ---- */
+
+
+/*----- Menu Principal-----*/
+.menu-princ{ /* Menu tela principal*/
+    margin-top: 180px;
+}
+
+.menu-nota{ /* Menu tela principal */
+    padding-bottom: 80px;
+}
+
+#bot-busca { /* Botão menu tela principal */
+    width: 150px;
+    height: 40px;
+    margin-top: 6px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 6px;
     background-color: #039EF2;
-    border-radius: 30px; /* Arredondamento */ 
-    border-width: 5px; /* Espessura da borda*/ 
+    border-radius: 30px;              /* Arredondamento */ 
+    border-width: 5px;                /* Espessura da borda*/ 
     border-color: #0e98e27a ;
     color: white;
-    font: normal bold 1em arial, "sans serif" ;
+    font: normal bold 0.9em arial, "sans serif" ;
+ }
+/*----- Fim Menu Principal-----*/
+
+
+/* --- Tela de senha ---*/
+ .psenha{ /* Fonte tela senha*/
+     font-size: 0.9em; 
+     margin-bottom: 10px;
+ }
+
+ #seatual, #senova, #seconf{ /* Caixa tela senha */
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 200px;    
+ }
+ .main-tsenha{ /* Main tela de senha*/
+     margin-top: 200px;
+     width: 220px;
+     /*height: 570px;*/
+ }
+
+#dados{
+        width: 200px;
+       /* height: 570px;*/
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+        margin: auto;
+        margin-top: 200px;
+        padding-top: 40px;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 40px;
+        font-size: 1.2em;
+        text-align: left
 }
+
+#btnImprimir { /* Botão Entrar - Login */
+    width: 140px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 25px;
+    background-color: #039EF2;
+    border-radius: 30px;              /* Arredondamento */ 
+    border-width: 5px;                /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 0.8em arial, "sans serif" ;
+    
+ }
+ 
+
+
+
+/*---- Cadastro Cliente ----*/
+.cadmain{
+    width: 400px;
+    margin-top: 100 px;
+    height: 670px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+}
+
+.cadmain>h2{
+    margin-top: 2px;
+}
+
 .pdados{  /* nomes */
     font-size: 0.9em;
     text-align: left;
@@ -100,112 +320,426 @@ label { /* Nomes 'Email e Senha' */
     margin-bottom: 3px;
     
 }
-.cadmain{
-    width: 400px;
-     box-shadow: 2px 2px 1px 1px;
-}
 
-.cadmain>h2{
-    margin-top: 2px;
-    
-}
-.logincaixa{
-    
+.cadcaixa{
     padding: 10px;
-    width: 370px;
+    width: 100%;
     margin-right: 505px;
     font-size: 20px;
     box-shadow: 2px 2px 1px 0px;
     border-radius: 10px;
-    
 }
-#botlogin{ /* Botão cadastrar em tela de cadastro*/
+
+#botcad{ /* Botão cadastrar em tela de cadastro*/
+   width: 170px;
+   height: 50px;
+   margin-top: 40px;             
+   border-radius: 30px;             /* Arredondamento */ 
+   border-width: 5px;               /* Espessura da borda*/ 
+   border-color: #0e98e27a ;
+   background-color: #039EF2;
+   color: white;
+   font: normal bold 1.1em arial, "sans serif" ;
+}
+    
+
+
+/*--- Meus dados - atualizar dados---*/
+.mainat{ /* main dados */
+    width: 400px;
+    height: 660px;
+    padding: 60px;
+}
+
+.patdado{ /* nomes */ 
+    text-align: left;
+   /* margin-left: 50px;*/
+    margin-bottom: 5px;
+}
+.h2atdado{ /* nome maior */ 
+    text-align: center;
+    margin-top: 20px;
+}
+
+#botat{ /* botão */ 
+    width: 150px;
+    height: 45px;           
+    border-radius: 30px;             /* Arredondamento */ 
+    border-width: 5px;               /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    background-color: #039EF2;
+    color: white;
+    font: normal bold 1.1em arial, "sans serif" ;
+   /* margin-right: 500px;*/
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+
+
+/* ---- Busca nota ----*/
+
+.mainnota{ /* Primeira ul*/
+    width: 100%;
+    margin: auto;
+    border-radius: 0px;
+    float: right;
+    height: 200px;
+    padding: 40px;
+    background-color: white;
+
+}
+
+.notaul1>li{
+    display: inline-block;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.notad1{ /*texto nomes num nota cnpj...*/
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+.inputDataNf{
+    padding: 10px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    border-radius: 10px;
+}
+
+.inputRazao{
+    width: 400px;
+    padding: 12px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    border-radius: 10px;
+}
+
+.inputChave{
+    width: 460px;
+    padding: 11px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    border-radius: 10px;
+}
+
+.inputCnpj{
+    width: 460px;
+    padding: 11px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    border-radius: 10px;
+}
+
+#btnBuscaNota{
+    float: right;
+}
+
+.mainnota >.notaul2{ /*Segunda Ul*/
+    font-size: 1em;
+}
+
+.mainnota >.notaul2>li{
+    display: inline-block;
+}
+
+
+/*Link para retornar inicio*/
+.retInicio>a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 12pt;
+}
+
+/*-------------------------------------------*/
+/**/
+
+.menu-relatorios
+{
+    float: right;
+    padding-right: 50px;
+}
+.menu-relatorios ul > li { /* Alinhamento e fonte 'contato sobre' */ 
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+
+#bot-buscar-nf { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+#bot-relatorios { /* Botão Entrar - Login */
+    width: 150px;
+    height: 35px;
+    margin-top: 30px;
+    background-color: #039EF2;
+    border-radius: 30px; /* Arredondamento */ 
+    border-width: 5px; /* Espessura da borda*/ 
+    border-color: #0e98e27a ;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    font-size:15px;
+}
+#data-inicial{
+    float: right;
+    height: 35px;
+    width: 190px;
+    margin-right: 80px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    font-size: 1.8em;
+    font-family: monospace;
+}
+
+#data-final{
+    float: right;
+    height: 35px;
+    width: 190px;
+    margin-right: 85px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    font-size: 1.8em;
+    font-family: monospace;      
+}
+
+#razao-social{
+    float: right;
+    height: 35px;
+    width: 700px;
+    margin-right: 110px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    font-size: 1.8em;    
+}
+
+#cnpj{
+    float: right;
+    height: 35px;
+    width: 200px;
+    margin-right: 300px;
+    margin-top: 45px;
+    font-size: 20px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+}
+
+#bot-procurar{
+ 
     width: 180px;
-    height: 25px;
-    margin-top: px;             
+    height: 30px;  
     border-radius: 30px;             /* Arredondamento */ 
     border-width: 5px;               /* Espessura da borda*/ 
     border-color: #0e98e27a ;
     background-color: #039EF2;
     color: white;
     font: normal bold 1em arial, "sans serif" ;
-
-    margin-left: 100px;
- }
- #esqsenha{ 
- margin-left:30px;
-font-size: 22px;
-
-
-
+    margin-right: 350px;
+    margin-top: 15px;
+    font-size: 15px;
 }
 
- 
-
-/* FIM MAIN LOGIN*/
-
-/* FOOTER - RODAPÉ*/
-footer {
-    width: 100%; /* Ocupar toda a tela - Largura */
-    height: 150px; /* Altura */
-    background-color: #07679A;
-    bottom: 0; /* Posição fundo*/ 
-    left: 0;  /* Não deixa espaço na lateral esquerda */
-    position: fixed; /* Manter fixo */
-}
-
-.opc-rodape{ /* Posição 'planos, contato, sefaz' */
-    float: left;
-    padding-left: 15px;
-
-}
-
-.opc-rodape > ul > li { /* Posição e fonte 'planos, contato, sefaz'*/
-    padding-top: 18px;
-    padding-left: 140px ;
-    color: white;
-    font-weight: light;
-    font-size: 1em; /* Tamanho Fonte - 'em' */
-    line-height: 15px;
-}
-
-.email-rodape { /* Posição 'caixa email e parágrafo' */
-    float: right;
-    padding-right: 140px;
-    line-height: 2px; /* Distância 'parágrafo' e 'caixa email'*/
-}
-
-.email-rodape > p { /* Posição e fonte 'parágrafo' */
-    padding-top: 36px;
-    text-align: left;
-    font-size: 1em;
-    color: white;
-}
-
-#bot-inscreva{ /* Configuração botão 'inscreva-se'*/
-    width: 130px;
-    height: 30px;
-    border-radius: 15px;
-    border-color: #3e8cb6;
-    background-color: #48b8f5;
-    color: #ffffff;
-    font-weight: bolder;
-    font-size: 1em;
-}
-
-#email-inscreva{ /* Configuração 'caixa email'*/
-    width: 190px;
-    height: 22px;
-    border-color: #3e8cb6;
-    border-width: 2px;
-    padding-right: 10px;
-}
-/* FIM FOOTER RODAPÉ*/
-
-/* Configuração padrão para cor botões azuis: 
-    background-color: #039EF2;
-    border-radius: 30px;  -----  Sujeito a alteração
-    border-width: 5px;  ---- Sujeito a alteração
+#bot-imprimir{  
+    width: 180px;
+    height: 30px;  
+    border-radius: 30px;             /* Arredondamento */ 
+    border-width: 5px;               /* Espessura da borda*/ 
     border-color: #0e98e27a ;
+    background-color: #039EF2;
+    color: white;
+    font: normal bold 1em arial, "sans serif" ;
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+    font-size: 15px;
+}
 
-    border-color: #d4d4d4; /* Usar de padrão para outras caixas*/
+#menu-superior { 
+    width: 100%;
+    height: 130px;
+    background-color:#caecff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+#menu-infos{
+    width: 100%;
+    height: 70px;
+    background-color:#eff8ff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center; 
+}
+::placeholder{
+    font-family: monospace;
+    font: bold;
+    
+}
+
+#minha-conta { 
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+ margin: auto;
+    margin-left: 400px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+    margin-bottom: 300px;
+}
+#menu-infos{
+    width: 100%;
+    height: 35px;
+    background-color:#eff8ff;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;   
+}
+#resultados{
+    width: 100%;
+    height: 60px;
+    background-color:white;
+    border-radius: 0px;
+    box-shadow: 2px 2px 6px rgba(52, 96, 134, 0.295);
+    margin: auto;
+    margin-right: 550px;
+    margin-top: 1px;
+    padding: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+.checkbox{
+    float: left;
+    margin-left: 10px;
+}
+.numero-nf{
+    float: left;
+    margin-left: 100px;
+    font-size: 2em; 
+    margin-right: 1px;
+}
+
+.data-emissao{
+    float: left;
+    margin-left: 100px;
+    margin-right: 40px;
+    font-size: 2em;
+
+}
+.procura-razao-social{
+    float: left;
+    margin-left: 130px;
+    font-size: 2em;
+    margin-right: 80px;
+}
+.chave-acesso{
+    float: left;
+    margin-left: 200px;
+    margin-right: 50px;
+    font-size: 2em;
+}
+.valor{
+    float: left;
+    margin-left: 200px;
+    font-size: 2em;
+}
+.download{
+    float: left;
+    margin-left: 200px;
+    font-size: 2em;
+}
+
+#display-numero-nf{
+    float: left;
+    font-size: 15px;
+    margin-top: 10px; 
+    height: 30px;
+    width: 150px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+
+}
+#display-data-emissao{
+    float: left;
+    margin-right: 25px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+    margin-left: -90px;
+
+}
+#display-razao-social{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+
+}
+#display-chave-acesso{
+    float: left;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 400px;
+    margin-right:50px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+
+}
+#display-valor{
+    float: left;
+    margin-left: 20px;
+    font-size: 15px;
+    margin-top: 5px; 
+    height: 30px;
+    width: 150px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 1px 0px;
+    border-radius: 8px;
+   
+}
+    

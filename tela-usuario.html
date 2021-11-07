@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ícone na aba do navegador-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script-logout.js"></script>
     <script src="script.js"></script>
-    <title>REPX - Alterar senha</title>
+    <title>REPX - Usuário</title>
 </head>
+
 <body>
-    <header> <!--Pós Login-->
+    <!-- Pós Login-->
+    <header>
         <!--Menus superior - Fixo-->
         <nav class="menu-superior">
             <ul>
@@ -21,15 +26,24 @@
             </ul>
         </nav>
     </header>
-    <main class="main-tsenha">  
-        <p class="psenha" >Insira a senha atual</p>
-        <input type="password" name="seatual" id="seatual" placeholder="**************">
-        <p class="psenha">Insira a nova senha</p>
-        <input type="password" name="senova" id="senova" placeholder="**************">
-        <p class="psenha">Confirme a nova senha</p>
-        <input type="password" name="seconf" id="seconf" placeholder="**************">
-        <a href="tela-menu.html"><input type="button" value="Confirmar" id="bot-busca"></a>
+    <main class="mainat">
+        <div class="atdado">
+            <h2 class="h2atdado">Atualizar Dados</h2>
+            <hr>
+            <p class="patdado">Email</p>
+            <input class="cadcaixa" type="email" name="cademail" id="atemail">
+            <p class="patdado">Razão Social</p>
+            <input class="cadcaixa" type="text" name="cadnome" id="atnome">
+            <p class="patdado">CNPJ</p>
+            <input class="cadcaixa" type="number" name="cadcnpj" id="atcnpj">
+            <p class="patdado">Senha</p>
+            <input class="cadcaixa" type="password" name="cadsenha" id="atsenha">
+            <p class="patdado">Confirmar Senha</p>
+            <input class="cadcaixa" type="password" name="cadsenconf" id="atsenconf"><br>
+            <a href="#"><input type="button" value="Atualizar" id="botat" onclick="atualizaDados()"></a>
+            <p class="retInicio"><a href="tela-menu.html">Retornar ao menu</a></p>
     </main>
+    </div>
     <footer>
         <!--Rodapé - Lado Esquerdo-->
         <div class="footer-pos">
@@ -53,4 +67,5 @@
         </div>
     </footer>
 </body>
+
 </html>
